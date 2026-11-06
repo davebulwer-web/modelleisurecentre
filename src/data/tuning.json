@@ -1,0 +1,39 @@
+{
+  "_comment": "Balance values. Times are real seconds unless noted. Meters run 0-100. The centre is open from dayStartHour to dayEndHour (24h clock).",
+  "dayLengthSeconds": 300,
+  "dayStartHour": 7,
+  "dayEndHour": 21,
+  "andySpeed": 74,
+  "andySlowFactor": 0.65,
+  "npcSpeed": 44,
+  "teenSpeed": 58,
+  "startAnger": 10,
+  "angerCarryOver": 0.5,
+  "passiveAngerPerSec": 0.04,
+  "bladderPerSec": 0.5,
+  "thirstPerSec": 0.42,
+  "needsAngerPerSec": 1.6,
+  "needsStartBladder": 15,
+  "needsStartThirst": 25,
+  "toiletSeconds": 2.5,
+  "teaSeconds": 3.0,
+  "teaCalm": 6,
+  "needMinimumToUse": 15,
+  "interactRadius": 22,
+  "toiletOutOfOrderSeconds": 50,
+  "managerMeetingSeconds": 6,
+  "muttersEverySeconds": [18, 34],
+  "spawn": {
+    "firstDelay": 5,
+    "intervalStart": 18,
+    "intervalEnd": 8,
+    "maxActiveStart": 2,
+    "maxActiveEnd": 5
+  },
+  "dayScaling": {
+    "interval": 0.88,
+    "timeLimit": 0.93,
+    "extraMaxActivePerDay": 0.5
+  },
+  "dayEndBonus": 500
+}

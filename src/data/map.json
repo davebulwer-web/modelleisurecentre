@@ -1,0 +1,717 @@
+{
+ "_comment": "Leisure centre floor plan. '#' wall, '.' floor (room decides the tile), '~' pool water and 'L' bowling lanes are solid, 'o' pavement, '=' road. Points are in tiles.",
+ "tileSize": 16,
+ "width": 40,
+ "height": 24,
+ "legend": {
+  "#": "wall",
+  ".": "floor",
+  "~": "water",
+  "L": "lane",
+  "o": "pavement",
+  "=": "road"
+ },
+ "rows": [
+  "########################################",
+  "#................#..........#......#...#",
+  "#................#..........#......#...#",
+  "#..~~~~~~~~~~~~..#..........#..........#",
+  "#..~~~~~~~~~~~~..#..........#......#...#",
+  "#..~~~~~~~~~~~~..#..........#......#####",
+  "#..~~~~~~~~~~~~..#..........#......#...#",
+  "#..~~~~~~~~~~~~..#..........#......#...#",
+  "#................#..........#......#...#",
+  "#................#..........#......#...#",
+  "########..############..#######..####.##",
+  "#......................................#",
+  "#......................................#",
+  "####..#######...#####......###..########",
+  "#........#.........#........#..LLLLLLLL#",
+  "#........#.........#........#..LLLLLLLL#",
+  "#........#.........#........#..LLLLLLLL#",
+  "#........#.....................LLLLLLLL#",
+  "#........#.....................LLLLLLLL#",
+  "#........#.........#........#..LLLLLLLL#",
+  "#........#.........#........#..........#",
+  "#######################..###############",
+  "oooooooooooooooooooooooooooooooooooooooo",
+  "========================================"
+ ],
+ "rooms": [
+  {
+   "id": "pool",
+   "name": "Swimming Pool",
+   "x0": 1,
+   "y0": 1,
+   "x1": 16,
+   "y1": 9,
+   "floor": "tile_blue"
+  },
+  {
+   "id": "gym",
+   "name": "Gym",
+   "x0": 18,
+   "y0": 1,
+   "x1": 27,
+   "y1": 9,
+   "floor": "gym_mat"
+  },
+  {
+   "id": "office",
+   "name": "Office",
+   "x0": 29,
+   "y0": 1,
+   "x1": 34,
+   "y1": 9,
+   "floor": "carpet_grey"
+  },
+  {
+   "id": "kitchen",
+   "name": "Staff Kitchen",
+   "x0": 36,
+   "y0": 1,
+   "x1": 38,
+   "y1": 4,
+   "floor": "lino"
+  },
+  {
+   "id": "toilets",
+   "name": "Toilets",
+   "x0": 36,
+   "y0": 6,
+   "x1": 38,
+   "y1": 10,
+   "floor": "tile_white"
+  },
+  {
+   "id": "corridor",
+   "name": "Corridor",
+   "x0": 1,
+   "y0": 10,
+   "x1": 38,
+   "y1": 13,
+   "floor": "lino"
+  },
+  {
+   "id": "changing",
+   "name": "Changing Rooms",
+   "x0": 1,
+   "y0": 14,
+   "x1": 8,
+   "y1": 20,
+   "floor": "tile_white"
+  },
+  {
+   "id": "cafe",
+   "name": "Cafe",
+   "x0": 10,
+   "y0": 14,
+   "x1": 18,
+   "y1": 20,
+   "floor": "wood"
+  },
+  {
+   "id": "reception",
+   "name": "Reception",
+   "x0": 20,
+   "y0": 14,
+   "x1": 27,
+   "y1": 21,
+   "floor": "carpet_blue"
+  },
+  {
+   "id": "bowling",
+   "name": "Bowling Alley",
+   "x0": 29,
+   "y0": 14,
+   "x1": 38,
+   "y1": 20,
+   "floor": "carpet_red"
+  },
+  {
+   "id": "outside",
+   "name": "Car Park",
+   "x0": 0,
+   "y0": 22,
+   "x1": 39,
+   "y1": 23,
+   "floor": "pavement"
+  }
+ ],
+ "desks": [
+  {
+   "id": "andy",
+   "x": 30,
+   "y": 2
+  },
+  {
+   "id": "manager",
+   "x": 32,
+   "y": 6
+  }
+ ],
+ "objects": [
+  {
+   "type": "lifeguard_chair",
+   "x": 16,
+   "y": 4,
+   "solid": true
+  },
+  {
+   "type": "lounger",
+   "x": 1,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "lounger",
+   "x": 1,
+   "y": 5,
+   "solid": true
+  },
+  {
+   "type": "lounger",
+   "x": 1,
+   "y": 8,
+   "solid": true
+  },
+  {
+   "type": "sign_pool",
+   "x": 15,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "plant",
+   "x": 16,
+   "y": 9,
+   "solid": true
+  },
+  {
+   "type": "treadmill",
+   "x": 19,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "treadmill",
+   "x": 21,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "treadmill",
+   "x": 23,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "treadmill",
+   "x": 25,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "bench",
+   "x": 20,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "bench",
+   "x": 22,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "weights",
+   "x": 26,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "weights",
+   "x": 27,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "mirror",
+   "x": 18,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "cooler",
+   "x": 27,
+   "y": 9,
+   "solid": true
+  },
+  {
+   "type": "filing",
+   "x": 33,
+   "y": 1,
+   "solid": true
+  },
+  {
+   "type": "plant",
+   "x": 34,
+   "y": 1,
+   "solid": true
+  },
+  {
+   "type": "whiteboard",
+   "x": 29,
+   "y": 1,
+   "solid": true
+  },
+  {
+   "type": "printer",
+   "x": 34,
+   "y": 5,
+   "solid": true
+  },
+  {
+   "type": "plant",
+   "x": 29,
+   "y": 9,
+   "solid": true
+  },
+  {
+   "type": "counter",
+   "x": 36,
+   "y": 1,
+   "solid": true
+  },
+  {
+   "type": "kettle",
+   "x": 37,
+   "y": 1,
+   "solid": true
+  },
+  {
+   "type": "fridge",
+   "x": 38,
+   "y": 1,
+   "solid": true
+  },
+  {
+   "type": "sink",
+   "x": 36,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "toilet",
+   "x": 37,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "noticeboard",
+   "x": 12,
+   "y": 10,
+   "solid": false
+  },
+  {
+   "type": "plant",
+   "x": 1,
+   "y": 11,
+   "solid": true
+  },
+  {
+   "type": "bin",
+   "x": 27,
+   "y": 12,
+   "solid": true
+  },
+  {
+   "type": "plant",
+   "x": 38,
+   "y": 11,
+   "solid": true
+  },
+  {
+   "type": "lockers",
+   "x": 1,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "lockers",
+   "x": 2,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "lockers",
+   "x": 3,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "lockers",
+   "x": 6,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "lockers",
+   "x": 7,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "lockers",
+   "x": 8,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 3,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 4,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 5,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 6,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "shower",
+   "x": 1,
+   "y": 19,
+   "solid": false
+  },
+  {
+   "type": "cafe_counter",
+   "x": 10,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "coffee_machine",
+   "x": 11,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "cafe_counter",
+   "x": 12,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "till",
+   "x": 13,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "cakes",
+   "x": 14,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "cafe_counter",
+   "x": 15,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "cafe_table",
+   "x": 11,
+   "y": 18,
+   "solid": true
+  },
+  {
+   "type": "cafe_table",
+   "x": 14,
+   "y": 18,
+   "solid": true
+  },
+  {
+   "type": "cafe_table",
+   "x": 17,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "plant",
+   "x": 18,
+   "y": 20,
+   "solid": true
+  },
+  {
+   "type": "desk_front",
+   "x": 21,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "desk_front",
+   "x": 22,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "reception_pc",
+   "x": 23,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "desk_front",
+   "x": 24,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "desk_front",
+   "x": 25,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "desk_front",
+   "x": 26,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "vending",
+   "x": 20,
+   "y": 19,
+   "solid": true
+  },
+  {
+   "type": "plant",
+   "x": 27,
+   "y": 20,
+   "solid": true
+  },
+  {
+   "type": "turnstile",
+   "x": 21,
+   "y": 18,
+   "solid": false
+  },
+  {
+   "type": "leaflets",
+   "x": 27,
+   "y": 16,
+   "solid": true
+  },
+  {
+   "type": "ball_rack",
+   "x": 29,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "pins",
+   "x": 38,
+   "y": 14,
+   "solid": false
+  },
+  {
+   "type": "pins",
+   "x": 38,
+   "y": 16,
+   "solid": false
+  },
+  {
+   "type": "pins",
+   "x": 38,
+   "y": 18,
+   "solid": false
+  },
+  {
+   "type": "bin",
+   "x": 38,
+   "y": 20,
+   "solid": true
+  },
+  {
+   "type": "scoreboard",
+   "x": 33,
+   "y": 13,
+   "solid": false
+  }
+ ],
+ "bays": [],
+ "points": {
+  "kettle": [
+   37.5,
+   2.6
+  ],
+  "toilet": [
+   37.5,
+   7.3
+  ],
+  "toiletsDoor": [
+   37.5,
+   11.5
+  ],
+  "frontDoor": [
+   23.5,
+   20.6
+  ],
+  "outsideLeft": [
+   0.5,
+   22.6
+  ],
+  "outsideRight": [
+   39.5,
+   22.6
+  ],
+  "coffeeSpot": [
+   11.5,
+   16.7
+  ],
+  "counterCustomer": [
+   23.5,
+   16.8
+  ],
+  "receptionPost": [
+   23.5,
+   14.7
+  ],
+  "cafePost": [
+   12.5,
+   14.7
+  ],
+  "lifeguardPost": [
+   16.5,
+   4.95
+  ],
+  "showerSpot": [
+   2.5,
+   20.2
+  ],
+  "changingIn": [
+   4.5,
+   15.8
+  ],
+  "gymIn": [
+   22.5,
+   8.6
+  ],
+  "bowlingIn": [
+   30.5,
+   20.5
+  ],
+  "treadmill1": [
+   19.5,
+   2.95
+  ],
+  "treadmill2": [
+   21.5,
+   2.95
+  ],
+  "treadmill3": [
+   23.5,
+   2.95
+  ],
+  "treadmill4": [
+   25.5,
+   2.95
+  ],
+  "garyPost": [
+   24.5,
+   8.4
+  ],
+  "weightsSpot": [
+   25.5,
+   7.6
+  ],
+  "bowler1": [
+   29.6,
+   15.2
+  ],
+  "bowler2": [
+   29.6,
+   19.2
+  ],
+  "lane1": [
+   30.5,
+   15.0
+  ],
+  "lane2": [
+   30.5,
+   17.0
+  ],
+  "lane3": [
+   30.5,
+   19.0
+  ],
+  "cafeSeat1": [
+   10.5,
+   18.95
+  ],
+  "cafeSeat2": [
+   15.5,
+   18.95
+  ],
+  "cafeTrouble": [
+   16.6,
+   19.4
+  ],
+  "vendingSpot": [
+   21.3,
+   19.9
+  ],
+  "poolEdge1": [
+   5.5,
+   2.6
+  ],
+  "poolEdge2": [
+   11.5,
+   2.6
+  ],
+  "poolEdge3": [
+   6.5,
+   8.6
+  ],
+  "poolEdge4": [
+   12.5,
+   8.6
+  ],
+  "poolRun1": [
+   2.0,
+   2.4
+  ],
+  "poolRun2": [
+   15.4,
+   2.4
+  ],
+  "poolRun3": [
+   15.4,
+   8.6
+  ],
+  "poolRun4": [
+   2.0,
+   8.6
+  ],
+  "bowlingTrouble": [
+   29.6,
+   17.2
+  ]
+ },
+ "andyStart": "andy"
+}

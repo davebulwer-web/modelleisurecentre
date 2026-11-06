@@ -1,0 +1,16 @@
+{
+  "_comment": "Task types. weight = how often the spawner picks it. timeLimit and hold are seconds. calm = anger removed on success; angerOnFail = anger added if the timer runs out. membership: legitChance = share of valid cards; angerOnWrong = anger for a wrong call. trouble = troublemakers (dive-bombing, running by the pool, the stag do in the bowling alley, a chip fight in the cafe, Gains Gary dropping weights). spill = puddles, sick and litter. pins = a bowling lane's pinsetter jammed. treadmill = broken gym kit. lifeguard = Gaz has dozed off. vending = the machine has eaten Little Alfie's pound (thumping it calms Andy). complaint and phone: fobbing someone off removes brushOffCalm anger, sorting it adds ticketAnger; every brushOffsBeforeManager fob-offs in a day, the Area Manager turns up; hanging up on a cold call removes hangUpCalm, hearing them out adds hearOutAnger. toilet: garyChance = how often Gains Gary is the culprit. manager = meeting with the Area Manager in the office.",
+  "membership": { "weight": 3,   "timeLimit": 30, "hold": 0.6, "angerOnFail": 10, "angerOnWrong": 10, "calm": 4, "score": 150, "legitChance": 0.55 },
+  "trouble":    { "weight": 3,   "timeLimit": 30, "hold": 1.4, "angerOnFail": 10, "calm": 10, "score": 120 },
+  "spill":      { "weight": 2.5, "timeLimit": 35, "hold": 1.8, "angerOnFail": 9,  "calm": 3,  "score": 100 },
+  "alistair":   { "weight": 1.2, "timeLimit": 30, "hold": 0.8, "angerOnFail": 12, "calm": 6,  "score": 150 },
+  "pins":       { "weight": 1.5, "timeLimit": 32, "hold": 2.0, "angerOnFail": 8,  "calm": 3,  "score": 100 },
+  "treadmill":  { "weight": 1.2, "timeLimit": 35, "hold": 2.4, "angerOnFail": 8,  "calm": 3,  "score": 100 },
+  "lifeguard":  { "weight": 1,   "timeLimit": 22, "hold": 1.0, "angerOnFail": 14, "calm": 4,  "score": 150 },
+  "vending":    { "weight": 1,   "timeLimit": 25, "hold": 1.0, "angerOnFail": 5,  "calm": 9,  "score": 80 },
+  "complaint":  { "weight": 1.5, "timeLimit": 25, "hold": 0.6, "angerOnFail": 9,  "calm": 0,  "score": 100, "brushOffCalm": 8, "ticketAnger": 3 },
+  "phone":      { "weight": 2,   "timeLimit": 14, "hold": 0.4, "angerOnFail": 8,  "calm": 0,  "score": 80, "mobileChance": 0.5, "brushOffCalm": 8, "ticketAnger": 3, "coldCallChance": 0.3, "hangUpCalm": 6, "hearOutAnger": 6 },
+  "shower":     { "weight": 1,   "timeLimit": 35, "hold": 1.2, "angerOnFail": 8,  "calm": 3,  "score": 100 },
+  "toilet":     { "weight": 1.5, "timeLimit": 32, "hold": 0.8, "angerOnFail": 14, "calm": 3,  "score": 120, "garyChance": 0.7 },
+  "manager":    { "weight": 1,   "timeLimit": 40, "hold": 0.4, "angerOnFail": 15, "calm": 2,  "score": 150, "brushOffsBeforeManager": 3 }
+}

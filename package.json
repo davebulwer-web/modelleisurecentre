@@ -1,0 +1,22 @@
+{
+  "name": "angry-andy-model-leisure-centre",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Angry Andy - Model Leisure Centre: a small top-down pixel-art leisure centre survival game for the browser",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "art": "node tools/make-placeholder-art.mjs",
+    "smoke": "node tools/smoke.cjs",
+    "package": "npm run build && node tools/package-single.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "vitest": "3.2.4"
+  }
+}

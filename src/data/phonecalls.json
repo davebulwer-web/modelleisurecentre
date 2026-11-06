@@ -1,0 +1,70 @@
+{
+  "_comment": "Phone calls to Andy's office. 'requests' are what people ring with (add as many as you like). 'brushOffs' are what Andy says when he fobs someone off; 'ticketLines' when he says he'll sort it. Cold callers: names, pitches, hang-up lines and the lines when Andy hears them out.",
+  "callers": [
+    "Head Office",
+    "The Council",
+    "Swimming Club Secretary",
+    "A parent",
+    "Sharon on Reception",
+    "The Bowling League",
+    "Health and Safety"
+  ],
+  "requests": [
+    "Can we book a kids' party for 40? Tomorrow. With a bouncy castle.",
+    "The council want to know why the pool is green.",
+    "Can you open the pool at 5am for the swimming club?",
+    "Has anyone handed in a set of false teeth?",
+    "Can my son have his party in the deep end?",
+    "We need you to fill in the 60-page safety audit. By lunchtime.",
+    "The bowling league wants new shoes. For free.",
+    "Is the sauna clothing optional? Asking for a friend.",
+    "Head Office wants a selfie of you smiling for the newsletter.",
+    "Can we run a foam party in the sports hall?",
+    "Someone's parked across all three disabled bays.",
+    "Can you do a zumba class? The instructor's off sick."
+  ],
+  "brushOffs": [
+    "A problem, but not my problem.",
+    "Not my circus, not my clowns.",
+    "Put it in writing. In crayon.",
+    "I'll pass that on. To the bin.",
+    "Ring back never."
+  ],
+  "ticketLines": [
+    "I'll put it in the diary.",
+    "Leave it with me.",
+    "I'll get Sharon to sort it.",
+    "Fine. I'll look into it. Eventually."
+  ],
+  "coldCallers": [
+    "Gary from SolarNow",
+    "Chantelle, Accident Claims UK",
+    "Darren, Chlorine Savings Ltd",
+    "Tiffany, Energy Switch Hub",
+    "Rory from Gym Kit Direct",
+    "Brad, Protein Bars Wholesale"
+  ],
+  "coldCalls": [
+    "Have you been in an accident that wasn't your fault?",
+    "We can halve your chlorine bill!",
+    "Your leisure centre may be eligible for free solar panels!",
+    "Can I interest you in 500 rubber ducks with your logo on?",
+    "Have you considered a wave machine? We do wave machines.",
+    "Our AI lifeguard never sleeps. Unlike yours.",
+    "Are you happy with your current broadband supplier?",
+    "Would you like to buy some Wegovy?"
+  ],
+  "hangUpLines": [
+    "Not interested. *click*",
+    "Take me off your list.",
+    "No. No. And no.",
+    "*hangs up mid-sentence*",
+    "This is a leisure centre.",
+    "I'm calling your CEO"
+  ],
+  "hearOutLines": [
+    "Twenty minutes of my life. Gone.",
+    "Fine... send me a brochure.",
+    "I've agreed to a 'follow-up call'. Brilliant."
+  ]
+}

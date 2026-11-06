@@ -1,0 +1,145 @@
+{
+  "_comment": "Andy's lines, rotated with no immediate repeats. Add as many as you like. 'manager' = what the Area Manager says in meetings; 'grumbles' play when a task is missed; 'excuses' are what troublemakers say when Andy has a go; 'trouble' = what each kind of troublemaker shouts; 'alistair' = Alistair's lines; 'complaints' = what customers complain about at reception.",
+  "catchphrases": [
+    "You don't get the gig!",
+    "Worse than my ex-wife.",
+    "A problem, but not my problem.",
+    "For goodness sake...",
+    "Have you tried turning it off and leaving?",
+    "Not on my watch.",
+    "Thirty five years I've been doing this.",
+    "Popular as a pork chop in a synagogue.",
+    "Not my circus, not my clowns.",
+    "Bhups has two cars",
+    "Ekow's thighs",
+    "Wegovy Boy",
+    "Scummy Contractor",
+    "Carlos Hepplos",
+    "How is the wonderful, the delectable Strewth?",
+    "You have two hopes and Bob is banging out tunes",
+    "Princess still can't drive",
+    "The current Mrs Smith",
+    "Rammed to the gunwales",
+    "As useful as an ashtray on a motorbike",
+    "Did I tell you about the bloke from MI5?",
+    "I saw half a bloke in a lift shaft",
+    "Biltong Boy",
+    "Model Leisure Centre",
+    "Katie Chalk, do do do do do do",
+    "Bouncer at Mothercare",
+    "Car for Sale, call Bhups!",
+    "No running by the pool!",
+    "Model Leisure Centre, my backside.",
+    "Who's left a verruca sock here?",
+    "It's not a spa. It's a leisure centre.",
+    "Fifty pence for the lockers. FIFTY PENCE.",
+    "I've seen cleaner ponds.",
+    "Somebody's weed in the deep end. Again.",
+    "Ten pin? More like ten pain.",
+    "Aqua aerobics. Never again."
+  ],
+  "grumbles": [
+    "Grrr...",
+    "Oh, marvellous.",
+    "Typical.",
+    "Brilliant. Just brilliant.",
+    "Why me?",
+    "Doesn't get the gig"
+  ],
+  "excuses": [
+    "Sorry Andy!",
+    "It wasn't me!",
+    "Alright, alright!",
+    "I was just leaving!",
+    "Keep your hair on!",
+    "Shut it, baldy",
+    "My mum's a member!",
+    "It's a free country!"
+  ],
+  "manager": [
+    "We need to be more of a MODEL leisure centre, Andy.",
+    "Head Office wants a juice bar. Where the sauna is.",
+    "Can we get the pool warmer and the heating bill lower?",
+    "Budget's frozen. So is the pool, apparently.",
+    "We've had a complaint. From Mrs Pemberton. Forty pages.",
+    "Could the lifeguard look a bit more... awake?",
+    "Let's do 24-hour opening. You don't need sleep, do you?",
+    "I want the bowling alley to be more... synergistic."
+  ],
+  "trouble": {
+    "bombing": [
+      "BOMBS AWAY!",
+      "CANNONBALL!",
+      "Watch THIS!",
+      "Geronimooo!"
+    ],
+    "running": [
+      "Can't catch me!",
+      "Wheeee!",
+      "Race you!",
+      "Last one in's a loser!"
+    ],
+    "bowling": [
+      "STRIKE! Wrong lane!",
+      "Ten pin? Twelve pin!",
+      "Oi oi! Stag do!",
+      "Another round!"
+    ],
+    "cafe": [
+      "Chip fight!",
+      "*splat*",
+      "Bet you can't catch it!",
+      "Ketchup missile!"
+    ],
+    "gym": [
+      "UGHHHH!",
+      "*CLANG*",
+      "LIGHT WEIGHT BABY!",
+      "*DROPS WEIGHTS*"
+    ]
+  },
+  "alistair": {
+    "sneaking": [
+      "Don't mind me...",
+      "Just popping in...",
+      "*tiptoes*",
+      "Nobody saw me..."
+    ],
+    "caught": [
+      "You're BANNED, Alistair!",
+      "Out! And leave the cup!",
+      "Not on my watch, Alistair.",
+      "Membership card? No? OUT."
+    ],
+    "excuses": [
+      "I'm thinking of joining!",
+      "Just using the loo!",
+      "The coffee's better here...",
+      "I was never here."
+    ],
+    "escaped": [
+      "Cheers for the latte, Andy!",
+      "Lovely flat white, ta!",
+      "See you next week!"
+    ]
+  },
+  "complaints": [
+    "The pool is too cold. And too wet.",
+    "There's a plaster in the jacuzzi.",
+    "The changing room smells of feet.",
+    "The aqua aerobics music is too loud.",
+    "Someone's in my usual lane. MY lane.",
+    "The vending machine ate my pound.",
+    "Your bowling shoes have been worn before.",
+    "The cafe ran out of teacakes. At nine o'clock.",
+    "I found a verruca sock in my locker.",
+    "The hand dryer is too powerful. It scared my husband.",
+    "Why is the sauna so hot?",
+    "The sign says no bombing but there's no sign about cannonballs."
+  ],
+  "vending": [
+    "It ate my pound!",
+    "My crisps are stuck!",
+    "Mister, it's broken!"
+  ]
+}
