@@ -1,0 +1,704 @@
+{
+ "_comment": "Rec ground floor plan. '#' clubhouse wall, 'f' fence, 'H' the neighbours' houses (all solid), 'g' gate, '.' floor (the room decides the tile), 'o' pavement, '=' road. Points are in tiles.",
+ "tileSize": 16,
+ "width": 40,
+ "height": 24,
+ "legend": {
+  "#": "wall",
+  ".": "floor",
+  "f": "fence",
+  "g": "gate",
+  "H": "house",
+  "o": "pavement",
+  "=": "road"
+ },
+ "rows": [
+  "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+  "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+  "f............f............f............f",
+  "f............f............f............f",
+  "f............f............f............f",
+  "ffffffgffffffffffffgffffffffffffgfffffff",
+  "f......................................f",
+  "f......................................f",
+  "g......................................f",
+  "f...........................############",
+  "f...........................#....#.....#",
+  "f...........................#....#.....#",
+  "f...........................#....#.....#",
+  "f...........................##.#####.###",
+  "f......................................#",
+  "f......................................#",
+  "f...........................###.#####.##",
+  "f...........................#......#...#",
+  "f...........................#......#...#",
+  "f...........................#......#...#",
+  "f...........................#......#...#",
+  "fffffffffffffgfffffffffffffg############",
+  "oooooooooooooooooooooooooooooooooooooooo",
+  "========================================"
+ ],
+ "rooms": [
+  {
+   "id": "gardenA",
+   "name": "Grimshaw's Garden",
+   "x0": 1,
+   "y0": 2,
+   "x1": 12,
+   "y1": 4,
+   "floor": "grass"
+  },
+  {
+   "id": "gardenB",
+   "name": "Mrs P's Garden",
+   "x0": 14,
+   "y0": 2,
+   "x1": 25,
+   "y1": 4,
+   "floor": "grass"
+  },
+  {
+   "id": "gardenC",
+   "name": "Nigel's Garden",
+   "x0": 27,
+   "y0": 2,
+   "x1": 38,
+   "y1": 4,
+   "floor": "grass"
+  },
+  {
+   "id": "pitch",
+   "name": "Pitch",
+   "x0": 1,
+   "y0": 6,
+   "x1": 26,
+   "y1": 20,
+   "floor": "pitch"
+  },
+  {
+   "id": "grounds",
+   "name": "Grounds",
+   "x0": 27,
+   "y0": 6,
+   "x1": 38,
+   "y1": 8,
+   "floor": "grass"
+  },
+  {
+   "id": "path",
+   "name": "Path",
+   "x0": 27,
+   "y0": 9,
+   "x1": 27,
+   "y1": 20,
+   "floor": "gravel"
+  },
+  {
+   "id": "office",
+   "name": "Office",
+   "x0": 29,
+   "y0": 10,
+   "x1": 32,
+   "y1": 12,
+   "floor": "carpet_grey"
+  },
+  {
+   "id": "kitchen",
+   "name": "Tea Hut",
+   "x0": 34,
+   "y0": 10,
+   "x1": 38,
+   "y1": 12,
+   "floor": "lino"
+  },
+  {
+   "id": "corridor",
+   "name": "Clubhouse",
+   "x0": 28,
+   "y0": 13,
+   "x1": 38,
+   "y1": 15,
+   "floor": "lino"
+  },
+  {
+   "id": "changing",
+   "name": "Changing Rooms",
+   "x0": 29,
+   "y0": 16,
+   "x1": 34,
+   "y1": 20,
+   "floor": "tile_blue"
+  },
+  {
+   "id": "toilets",
+   "name": "Toilets",
+   "x0": 36,
+   "y0": 16,
+   "x1": 38,
+   "y1": 20,
+   "floor": "tile_white"
+  },
+  {
+   "id": "carpark",
+   "name": "Car Park",
+   "x0": 0,
+   "y0": 22,
+   "x1": 39,
+   "y1": 23,
+   "floor": "pavement"
+  }
+ ],
+ "desks": [
+  {
+   "id": "andy",
+   "x": 31,
+   "y": 10
+  }
+ ],
+ "objects": [
+  {
+   "type": "house_window",
+   "x": 3,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "house_window",
+   "x": 9,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "house_window",
+   "x": 16,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "house_window",
+   "x": 23,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "house_window",
+   "x": 29,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "house_window",
+   "x": 36,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "back_door",
+   "x": 6,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "back_door",
+   "x": 19,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "back_door",
+   "x": 32,
+   "y": 1,
+   "solid": false
+  },
+  {
+   "type": "roses",
+   "x": 1,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "roses",
+   "x": 2,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "roses",
+   "x": 11,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "roses",
+   "x": 12,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "gnome",
+   "x": 9,
+   "y": 4,
+   "solid": true
+  },
+  {
+   "type": "gnome",
+   "x": 4,
+   "y": 4,
+   "solid": true
+  },
+  {
+   "type": "greenhouse",
+   "x": 14,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "roses",
+   "x": 24,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "roses",
+   "x": 25,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "birdbath",
+   "x": 22,
+   "y": 4,
+   "solid": true
+  },
+  {
+   "type": "trampoline",
+   "x": 28,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "hottub",
+   "x": 34,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "shed",
+   "x": 37,
+   "y": 2,
+   "solid": true
+  },
+  {
+   "type": "goal_left",
+   "x": 1,
+   "y": 12,
+   "solid": false
+  },
+  {
+   "type": "goal_right",
+   "x": 26,
+   "y": 12,
+   "solid": false
+  },
+  {
+   "type": "flag",
+   "x": 2,
+   "y": 7,
+   "solid": false
+  },
+  {
+   "type": "flag",
+   "x": 25,
+   "y": 7,
+   "solid": false
+  },
+  {
+   "type": "flag",
+   "x": 2,
+   "y": 19,
+   "solid": false
+  },
+  {
+   "type": "flag",
+   "x": 25,
+   "y": 19,
+   "solid": false
+  },
+  {
+   "type": "cone",
+   "x": 18,
+   "y": 17,
+   "solid": false
+  },
+  {
+   "type": "cone",
+   "x": 21,
+   "y": 17,
+   "solid": false
+  },
+  {
+   "type": "cone",
+   "x": 6,
+   "y": 8,
+   "solid": false
+  },
+  {
+   "type": "cone",
+   "x": 8,
+   "y": 8,
+   "solid": false
+  },
+  {
+   "type": "signin_table",
+   "x": 26,
+   "y": 15,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 9,
+   "y": 20,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 10,
+   "y": 20,
+   "solid": true
+  },
+  {
+   "type": "tree",
+   "x": 38,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "tree",
+   "x": 28,
+   "y": 6,
+   "solid": true
+  },
+  {
+   "type": "bin",
+   "x": 37,
+   "y": 8,
+   "solid": true
+  },
+  {
+   "type": "hatch",
+   "x": 36,
+   "y": 9,
+   "solid": false
+  },
+  {
+   "type": "tactics",
+   "x": 29,
+   "y": 10,
+   "solid": true
+  },
+  {
+   "type": "ballbag",
+   "x": 32,
+   "y": 12,
+   "solid": true
+  },
+  {
+   "type": "urn",
+   "x": 34,
+   "y": 10,
+   "solid": true
+  },
+  {
+   "type": "counter",
+   "x": 35,
+   "y": 10,
+   "solid": true
+  },
+  {
+   "type": "biscuits",
+   "x": 36,
+   "y": 10,
+   "solid": true
+  },
+  {
+   "type": "counter",
+   "x": 37,
+   "y": 10,
+   "solid": true
+  },
+  {
+   "type": "fridge",
+   "x": 38,
+   "y": 10,
+   "solid": true
+  },
+  {
+   "type": "trophies",
+   "x": 38,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "noticeboard",
+   "x": 33,
+   "y": 13,
+   "solid": false
+  },
+  {
+   "type": "plant",
+   "x": 29,
+   "y": 14,
+   "solid": true
+  },
+  {
+   "type": "pegs",
+   "x": 29,
+   "y": 16,
+   "solid": false
+  },
+  {
+   "type": "pegs",
+   "x": 33,
+   "y": 16,
+   "solid": false
+  },
+  {
+   "type": "pegs",
+   "x": 34,
+   "y": 16,
+   "solid": false
+  },
+  {
+   "type": "bench_wood",
+   "x": 29,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 30,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 32,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "bench_wood",
+   "x": 33,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "shower",
+   "x": 33,
+   "y": 19,
+   "solid": false
+  },
+  {
+   "type": "kitbag",
+   "x": 29,
+   "y": 20,
+   "solid": true
+  },
+  {
+   "type": "sink",
+   "x": 36,
+   "y": 17,
+   "solid": true
+  },
+  {
+   "type": "toilet",
+   "x": 38,
+   "y": 17,
+   "solid": true
+  }
+ ],
+ "bays": [],
+ "points": {
+  "kettle": [
+   34.5,
+   11.6
+  ],
+  "toilet": [
+   38.5,
+   18.4
+  ],
+  "brendaPost": [
+   36.5,
+   11.6
+  ],
+  "hatch": [
+   36.5,
+   8.7
+  ],
+  "signinSpot": [
+   26.5,
+   16.7
+  ],
+  "carParkGate": [
+   27.5,
+   22.6
+  ],
+  "outsideLeft": [
+   0.5,
+   22.6
+  ],
+  "outsideRight": [
+   39.5,
+   22.6
+  ],
+  "parkGate": [
+   0.5,
+   8.5
+  ],
+  "changingIn": [
+   31.5,
+   16.6
+  ],
+  "gateA": [
+   6.5,
+   4.6
+  ],
+  "gateB": [
+   19.5,
+   4.6
+  ],
+  "gateC": [
+   32.5,
+   4.6
+  ],
+  "grimshawPost": [
+   4.5,
+   3.4
+  ],
+  "pembertonPost": [
+   21.5,
+   3.4
+  ],
+  "nigelPost": [
+   31.5,
+   3.4
+  ],
+  "u8a": [
+   4.5,
+   8.8
+  ],
+  "u8b": [
+   9.5,
+   8.8
+  ],
+  "u8c": [
+   7,
+   10.6
+  ],
+  "stationU8": [
+   7,
+   9.6
+  ],
+  "u10a": [
+   6.5,
+   12.6
+  ],
+  "u10b": [
+   6.5,
+   14.8
+  ],
+  "u10c": [
+   9,
+   13.7
+  ],
+  "stationU10": [
+   7.4,
+   13.7
+  ],
+  "u12a": [
+   16.5,
+   17.6
+  ],
+  "u12b": [
+   19.5,
+   17.6
+  ],
+  "u12c": [
+   22.5,
+   17.6
+  ],
+  "stationU12": [
+   19.5,
+   17.6
+  ],
+  "gazPost": [
+   12.5,
+   20.6
+  ],
+  "touch1": [
+   5.5,
+   20.6
+  ],
+  "touch2": [
+   16.5,
+   20.6
+  ],
+  "touch3": [
+   22.5,
+   20.6
+  ],
+  "goalClimb": [
+   26.5,
+   12.7
+  ],
+  "windowSpot": [
+   27.5,
+   10.6
+  ],
+  "scrapSpot": [
+   14,
+   12.6
+  ],
+  "iceCream": [
+   21.5,
+   22.6
+  ],
+  "netLeft": [
+   2.5,
+   13.6
+  ],
+  "netRight": [
+   25.5,
+   13.6
+  ],
+  "pumpSpot": [
+   31.4,
+   12.6
+  ],
+  "meetingSpot": [
+   29.6,
+   11.8
+  ],
+  "lee1": [
+   2.5,
+   6.8
+  ],
+  "lee2": [
+   25.5,
+   6.8
+  ],
+  "lee3": [
+   25.5,
+   20.4
+  ],
+  "lee4": [
+   2.5,
+   20.4
+  ],
+  "pegsSpot": [
+   34.4,
+   18.6
+  ]
+ },
+ "andyStart": "andy"
+}

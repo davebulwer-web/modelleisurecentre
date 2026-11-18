@@ -1,0 +1,214 @@
+{
+  "_comment": "Andy's lines, rotated with no immediate repeats. Add as many as you like. 'chairman' = what the Club Chairman says in meetings; 'grumbles' play when a task is missed; 'excuses' are what kids say when Andy has a go; 'trouble' = what each kind of trouble shouts; 'parents' = touchline parents; 'dogs' = dog barks and the owner's lines; 'alistair' = Alistair's lines; 'neighbours' = what the neighbours complain about; 'drills' = what Andy shouts while coaching; 'whatsapp' = the parents' WhatsApp group. 'matt' = Collector Matt's offers; 'walkers' = people wandering across the pitch; 'leedsBanter' = people bad-mouthing Leeds United; 'leedsReplies' = Andy putting them right.",
+  "catchphrases": [
+    "You don't get the gig!",
+    "Worse than my ex-wife.",
+    "A problem, but not my problem.",
+    "For goodness sake...",
+    "Have you tried turning it off and leaving?",
+    "Not on my watch.",
+    "Thirty five years I've been doing this.",
+    "Popular as a pork chop in a synagogue.",
+    "Not my circus, not my clowns.",
+    "Bhups has two cars",
+    "Ekow's thighs",
+    "Wegovy Boy",
+    "Scummy Contractor",
+    "Carlos Hepplos",
+    "How is the wonderful, the delectable Strewth?",
+    "You have two hopes and Bob is banging out tunes",
+    "Princess still can't drive",
+    "The current Mrs Smith",
+    "Rammed to the gunwales",
+    "As useful as an ashtray on a motorbike",
+    "Did I tell you about the bloke from MI5?",
+    "I saw half a bloke in a lift shaft",
+    "Biltong Boy",
+    "Katie Chalk, do do do do do do",
+    "Bouncer at Mothercare",
+    "Car for Sale, call Bhups!",
+    "Model Rovers, my backside.",
+    "Pass and MOVE!",
+    "It's a game of two halves. Both rubbish.",
+    "Back in my day we played in the mud. And liked it.",
+    "Who's had my whistle?",
+    "That's a yellow card, that is.",
+    "Get it in the mixer!",
+    "Some of you have got the touch of a fridge.",
+    "Hands off the crossbar!",
+    "I've seen better first touches on a trampoline.",
+    "Somebody's left a shin pad in the urn. AGAIN.",
+    "Under-tens. Under-trained. Under my skin.",
+    "Marching On Together!",
+    "Leeds! Leeds! Leeds!",
+    "We're Leeds and we're proud of it."
+  ],
+  "grumbles": [
+    "Grrr...",
+    "Oh, marvellous.",
+    "Typical.",
+    "Brilliant. Just brilliant.",
+    "Why me?",
+    "Doesn't get the gig",
+    "Offside. My patience is offside."
+  ],
+  "excuses": [
+    "Sorry Coach!",
+    "It wasn't me!",
+    "Alright, alright!",
+    "He started it!",
+    "Keep your hair on!",
+    "Shut it, baldy",
+    "My dad says I'm the best!",
+    "Can we have a match now?"
+  ],
+  "chairman": [
+    "We need to be more of a MODEL club, Andy.",
+    "The Under-8s need to win the league. Or else.",
+    "Can we do training without balls? They're expensive.",
+    "Budget's frozen. So are the showers, apparently.",
+    "We've had a complaint. From Mrs Pemberton. Forty pages.",
+    "Could the assistant coach look a bit more... awake?",
+    "Let's train twice a day. You don't need weekends, do you?",
+    "I want the tea hut to be more... synergistic.",
+    "The council say the goals are three inches too wide."
+  ],
+  "drills": [
+    "PASS! And MOVE!",
+    "Heads UP!",
+    "Left foot! Your OTHER left!",
+    "Through the cones! Not over them!",
+    "Shoot! No, not at me!",
+    "Communicate! Shout for it!"
+  ],
+  "trouble": {
+    "goal": [
+      "I'm the king of the castle!",
+      "Look Coach, no hands!",
+      "Swinging on the crossbar!",
+      "Wheeee!"
+    ],
+    "window": [
+      "Top bins!",
+      "Watch this!",
+      "It's only a little window!",
+      "Bet I can hit the clubhouse!"
+    ],
+    "scrap": [
+      "He kicked me!",
+      "Did NOT!",
+      "Give me my ball!",
+      "I'm telling!"
+    ],
+    "icecream": [
+      "ICE CREAM VAN!",
+      "Ninety-nine with a flake!",
+      "Mum gave me a pound!",
+      "Can I have sprinkles?"
+    ]
+  },
+  "parents": [
+    "GET STUCK IN!",
+    "REF! Are you blind?!",
+    "My Tyler should be up front!",
+    "Why isn't mine playing?!",
+    "SHOOOOT!",
+    "In my day we'd have won by ten!",
+    "Is this the A team or the Z team?",
+    "Coach! COACH! Over here!"
+  ],
+  "dogs": [
+    "WOOF!",
+    "Woof woof!",
+    "*steals the ball*",
+    "Grrr... woof!",
+    "*zoomies*"
+  ],
+  "owner": [
+    "He's FRIENDLY!",
+    "He's only playing!",
+    "She never does this!",
+    "BISCUIT! Come here! BISCUIT!",
+    "He just loves footballs!"
+  ],
+  "alistair": {
+    "sneaking": [
+      "Don't mind me...",
+      "Just popping in...",
+      "*tiptoes*",
+      "Nobody saw me..."
+    ],
+    "caught": [
+      "You're BANNED, Alistair!",
+      "Out! And put the custard creams back!",
+      "Not on my watch, Alistair.",
+      "Are you a registered player? No? OUT."
+    ],
+    "excuses": [
+      "I'm thinking of signing up!",
+      "Just using the loo!",
+      "The tea's better here...",
+      "I was never here."
+    ],
+    "escaped": [
+      "Cheers for the cuppa, Andy!",
+      "Lovely bourbons, ta!",
+      "See you next week!"
+    ]
+  },
+  "neighbours": [
+    "That's the FOURTH ball in my roses this week.",
+    "The whistle. Every Saturday. THE WHISTLE.",
+    "Your parents have parked across my drive.",
+    "A child just called me a 'boomer'.",
+    "The floodlights are shining into my bathroom.",
+    "There's a shin pad in my pond.",
+    "Your goalkeeper is in my shed.",
+    "The ice cream van chimes are giving me migraines.",
+    "Someone's wee'd on my hedge. I have photos.",
+    "That dog has been in my greenhouse.",
+    "I pay my council tax for PEACE AND QUIET.",
+    "Your swearing parent just upset my cockatiel."
+  ],
+  "whatsapp": [
+    "Is training on? It's spitting.",
+    "Can someone bring oranges? Not the cheap ones.",
+    "Why did my Jayden only play 6 minutes??",
+    "Has anyone seen a size 2 boot? Left one.",
+    "Who's doing the kit wash this week? (Nobody replies.)",
+    "Coach, can you do pick-up for 8 kids?",
+    "Training at 7am Sunday?? Is this a JOKE",
+    "Thumbs up if you're coming! (23 thumbs. 4 kids turn up.)"
+  ],
+  "matt": [
+    "I'll give you forty quid for the Under-8s' shirts.",
+    "Is this the 1992 away kit? Mint condition?",
+    "Got any match-worn? Unwashed is fine.",
+    "Signed by the Under-10s? I'll take the lot.",
+    "Do these come in an XXL?",
+    "I've got 412 shirts. I need 413."
+  ],
+  "walkers": [
+    "*walks straight through the drill*",
+    "Shortcut to Greggs!",
+    "*can't hear you, headphones*",
+    "It's a public footpath, isn't it?",
+    "Don't mind me!",
+    "Just cutting through!"
+  ],
+  "leedsBanter": [
+    "Leeds are going down!",
+    "Dirty Leeds!",
+    "When did Leeds last win anything? 1992?",
+    "Marching on together... to the Championship!",
+    "Leeds? Never heard of 'em.",
+    "Leeds are a pub team!"
+  ],
+  "leedsReplies": [
+    "Marching On Together! Now OUT.",
+    "Wash your mouth out!",
+    "Leeds are the greatest club in the world. END OF.",
+    "You're not fit to wipe Billy Bremner's boots!",
+    "We're Leeds and we're proud of it!"
+  ]
+}
