@@ -1,0 +1,64 @@
+{
+  "_comment": "Calls to Andy's phone. 'requests' are what people ring with (add as many as you like). 'brushOffs' are what Andy says when he fobs someone off; 'ticketLines' when he says he'll sort it. Cold callers: names, pitches, hang-up lines and the lines when Andy hears them out.",
+  "callers": [
+    "The Club Chairman",
+    "The League Secretary",
+    "The Council",
+    "A parent",
+    "Brenda in the Tea Hut",
+    "The Referee",
+    "The Groundsman"
+  ],
+  "requests": [
+    "Can we move Saturday's match to Sunday? And the pitch to Wales?",
+    "The council want to know why the pitch is mostly mud.",
+    "The referee's cancelled. Can you ref? And coach? And drive the minibus?",
+    "Has anyone handed in a set of false teeth? Found in the dugout.",
+    "Can my son have his birthday party in the centre circle?",
+    "We need the 60-page safeguarding form. By lunchtime.",
+    "The league says your goals are the wrong size.",
+    "Can we borrow all your cones? All of them. Forever.",
+    "The Chairman wants a team photo. Everyone smiling. Especially you.",
+    "Can the Under-8s play the Under-12s? For character building.",
+    "Somebody's parked on the penalty spot.",
+    "The groundsman's mower is in the canal again."
+  ],
+  "brushOffs": [
+    "A problem, but not my problem.",
+    "Not my circus, not my clowns.",
+    "Put it in writing. In crayon.",
+    "I'll pass that on. To the bin.",
+    "We'll discuss it at the AGM. In 2031.",
+    "Lovely. Bye now."
+  ],
+  "ticketLines": [
+    "Fine. I'll sort it. Again.",
+    "Leave it with me...",
+    "Yes. Of course. My pleasure. *grinds teeth*"
+  ],
+  "coldCallers": [
+    "Dave from Astroturf Direct",
+    "Kayleigh from Accident Claims",
+    "Gary from Mega Mobiles",
+    "Chantelle from Solar Panels",
+    "Barry from Floodlight Solutions"
+  ],
+  "coldCalls": [
+    "Have you had an accident on a football pitch that wasn't your fault?",
+    "Have you considered plastic grass? Dogs can't dig it!",
+    "We can put solar panels on your dugouts!",
+    "Your mobile contract is due for an upgrade!",
+    "Floodlights so bright the neighbours will need sunglasses!"
+  ],
+  "hangUpLines": [
+    "*CLICK*",
+    "Red card. Off you go.",
+    "No. Goodbye.",
+    "Not interested. EVER."
+  ],
+  "hearOutLines": [
+    "Twenty minutes of my life. Gone.",
+    "I've agreed to something. I don't know what.",
+    "Now I've got a free brochure. Marvellous."
+  ]
+}
