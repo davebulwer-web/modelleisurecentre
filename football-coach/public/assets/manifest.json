@@ -142,6 +142,21 @@
     "doreen": {
       "file": "sprites/doreen.png"
     },
+    "matt": {
+      "file": "sprites/matt.png"
+    },
+    "sue": {
+      "file": "sprites/sue.png"
+    },
+    "harry": {
+      "file": "sprites/harry.png"
+    },
+    "bob": {
+      "file": "sprites/bob.png"
+    },
+    "gav": {
+      "file": "sprites/gav.png"
+    },
     "biscuit": {
       "file": "sprites/biscuit.png"
     },
@@ -184,6 +199,11 @@
     "lee": "portraits/lee.png",
     "alistair": "portraits/alistair.png",
     "doreen": "portraits/doreen.png",
+    "matt": "portraits/matt.png",
+    "sue": "portraits/sue.png",
+    "harry": "portraits/harry.png",
+    "bob": "portraits/bob.png",
+    "gav": "portraits/gav.png",
     "biscuit": "portraits/biscuit.png",
     "tyson": "portraits/tyson.png",
     "princess": "portraits/princess.png",

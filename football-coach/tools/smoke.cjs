@@ -37,15 +37,15 @@ const PORT = 5199;
     await page.screenshot({ path: path.join(OUT, '2-start.png') });
 
     // jump the clock forward so lots is going on
-    await page.evaluate(() => { const g = window.__andy.game; g.clock = 120; for (const k of ['drill', 'dog', 'trouble', 'trouble', 'changing', 'ball', 'parent', 'injury', 'net', 'balls', 'alistair', 'lee', 'assistant', 'poo']) g.spawn(k); g.meters.anger = 55; });
+    await page.evaluate(() => { const g = window.__andy.game; g.clock = 120; for (const k of ['drill', 'dog', 'trouble', 'trouble', 'changing', 'ball', 'parent', 'injury', 'net', 'balls', 'alistair', 'lee', 'assistant', 'poo', 'matt', 'walker', 'burst', 'leeds']) g.spawn(k); g.meters.anger = 55; });
     await page.waitForTimeout(9000);
     await page.screenshot({ path: path.join(OUT, '3-busy.png') });
-    const want = ['drill', 'dog', 'trouble', 'changing', 'ball', 'parent', 'injury', 'net', 'balls', 'alistair', 'lee', 'assistant', 'poo'];
+    const want = ['drill', 'dog', 'trouble', 'changing', 'ball', 'parent', 'injury', 'net', 'balls', 'alistair', 'lee', 'assistant', 'poo', 'matt', 'walker', 'burst', 'leeds'];
     const have = await page.evaluate(() => window.__andy.game.tasks.map((t) => t.type));
     for (const k of want) if (!have.includes(k)) errors.push(`no ${k} task`);
 
     // deal with each live task by standing on it and holding E
-    for (let i = 0; i < 24; i++) {
+    for (let i = 0; i < 32; i++) {
       const left = await page.evaluate(() => {
         const g = window.__andy.game;
         g.meters.anger = 30; g.meters.bladder = g.meters.thirst = 0;

@@ -71,7 +71,7 @@ describe('game simulation', () => {
   });
 
   it('every hands-on task can be finished by standing on it and holding the action', () => {
-    const kinds = ['drill', 'dog', 'poo', 'changing', 'ball', 'parent', 'trouble', 'injury', 'net', 'balls', 'alistair', 'lee', 'assistant'] as const;
+    const kinds = ['drill', 'dog', 'poo', 'changing', 'ball', 'parent', 'trouble', 'injury', 'net', 'balls', 'alistair', 'lee', 'assistant', 'matt', 'walker', 'burst', 'leeds'] as const;
     for (const k of kinds) {
       for (const seed of [40, 41, 42]) {
         const g = fresh(seed);

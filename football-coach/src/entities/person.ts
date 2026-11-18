@@ -33,7 +33,7 @@ export class Person {
 
 export type Activity =
   | null | 'play' | 'bored' | 'watch' | 'phone' | 'garden' | 'complain' | 'shouting' | 'zoomies' | 'owner'
-  | 'tea' | 'cycling' | 'goal' | 'window' | 'scrap' | 'icecream' | 'injured';
+  | 'tea' | 'cycling' | 'goal' | 'window' | 'scrap' | 'icecream' | 'injured' | 'shirts' | 'wander' | 'banter';
 
 const LINES: Record<Exclude<Activity, null>, string[]> = {
   play: ['Pass it!', 'Mine!', 'Man on!', 'Goooal!', 'To me!'],
@@ -52,10 +52,13 @@ const LINES: Record<Exclude<Activity, null>, string[]> = {
   scrap: ['He started it!', 'Did NOT!', 'Give it BACK!'],
   icecream: ['Sprinkles please!', 'Ninety-nine!', 'Mum gave me a pound!'],
   injured: ['OWWW!', 'My leg!', "I can't feel my toe!", '*sobs*'],
+  shirts: ['Ooh, a size 6...', 'Is this one signed?', '*sniffs shirt*', 'Forty quid. Cash.'],
+  wander: ['*on the phone*', 'Just cutting through!', '*la la la*'],
+  banter: ['Leeds are going down!', 'Dirty Leeds!', 'Leeds? Pub team!', '1992 called!'],
 };
 
 /** Someone at the rec ground. Staff, kids and neighbours stand at their post; everyone else is walked about by the game. */
-const SHOUTY: Activity[] = ['complain', 'shouting', 'owner', 'goal', 'window', 'scrap', 'bored', 'injured'];
+const SHOUTY: Activity[] = ['complain', 'shouting', 'owner', 'goal', 'window', 'scrap', 'bored', 'injured', 'banter'];
 
 export class Npc extends Person {
   path: Vec[] | null = null;

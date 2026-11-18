@@ -1,75 +1,605 @@
 {
-  "_comment": "Rec ground cast. 'look' is only used by tools/make-placeholder-art.mjs to draw the placeholder sprites ('kid' draws a shorter body, 'dog' draws a dog). 'group': staff, kids and neighbours stand at their 'post' all day ('squad' says which training group a kid is in); arrivals, parents, visitors and dogs come in from outside when a task needs them; 'portrait' people are only seen on the phone or in meetings.",
-  "characters": [
-    { "id": "andy", "name": "Andy", "role": "Head Coach", "group": "andy", "desk": "andy",
-      "look": { "skin": "#f2c4a0", "hair": "bald", "hairColor": "#b9b9b9", "glasses": true, "shirt": "#1f3f8a", "trousers": "#1a1f33", "lanyard": true, "shoes": "#f0f0f0" } },
-
-    { "id": "brenda", "name": "Brenda", "role": "Tea Hut", "group": "staff", "post": "brendaPost", "facing": "down",
-      "look": { "skin": "#f3cfb0", "hair": "curly", "hairColor": "#d0d0d8", "shirt": "#c84a8a", "trousers": "#2a2a35", "skirt": true, "shoes": "#222" } },
-    { "id": "gaz", "name": "Gaz", "role": "Assistant Coach", "group": "staff", "post": "gazPost", "facing": "up", "activity": "watch",
-      "look": { "skin": "#e9b88f", "hair": "spiky", "hairColor": "#e0c070", "shirt": "#1f3f8a", "trousers": "#1a1f33", "shoes": "#f0f0f0" } },
-
-    { "id": "alfie", "name": "Little Alfie", "role": "Under-8s", "group": "kid", "squad": "u8", "post": "u8a", "facing": "right", "activity": "play",
-      "look": { "kid": true, "skin": "#f2c8a8", "hair": "spiky", "hairColor": "#c87030", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#222" } },
-    { "id": "poppy", "name": "Poppy", "role": "Under-8s", "group": "kid", "squad": "u8", "post": "u8b", "facing": "left", "activity": "play",
-      "look": { "kid": true, "skin": "#f5d2b8", "hair": "ponytail", "hairColor": "#e0b050", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#222" } },
-    { "id": "mia", "name": "Mia", "role": "Under-8s", "group": "kid", "squad": "u8", "post": "u8c", "facing": "up", "activity": "play",
-      "look": { "kid": true, "skin": "#8d5a3b", "hair": "bun", "hairColor": "#1e1410", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#222" } },
-    { "id": "tyler", "name": "Tyler", "role": "Under-10s", "group": "kid", "squad": "u10", "post": "u10a", "facing": "left", "activity": "play",
-      "look": { "kid": true, "skin": "#a8714a", "hair": "short", "hairColor": "#121212", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#f0d040" } },
-    { "id": "jayden", "name": "Jayden", "role": "Under-10s", "group": "kid", "squad": "u10", "post": "u10b", "facing": "left", "activity": "play",
-      "look": { "kid": true, "skin": "#f2c8a8", "hair": "short", "hairColor": "#d0a050", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#30a0f0" } },
-    { "id": "ruby", "name": "Ruby", "role": "Under-10s", "group": "kid", "squad": "u10", "post": "u10c", "facing": "left", "activity": "play",
-      "look": { "kid": true, "skin": "#f1cbb0", "hair": "long", "hairColor": "#8a4a2a", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#222" } },
-    { "id": "kyle", "name": "Kyle", "role": "Under-12s", "group": "kid", "squad": "u12", "post": "u12a", "facing": "right", "activity": "play",
-      "look": { "kid": true, "skin": "#f0c8a8", "hair": "cap", "hairColor": "#202020", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#f0f0f0" } },
-    { "id": "harvey", "name": "Harvey", "role": "Under-12s", "group": "kid", "squad": "u12", "post": "u12b", "facing": "left", "activity": "play",
-      "look": { "kid": true, "skin": "#c68e64", "hair": "short", "hairColor": "#2a1a10", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#222" } },
-    { "id": "ollie", "name": "Ollie", "role": "Under-12s", "group": "kid", "squad": "u12", "post": "u12c", "facing": "left", "activity": "play",
-      "look": { "kid": true, "skin": "#f2c8a8", "hair": "curly", "hairColor": "#e8c060", "shirt": "#d02a2a", "trousers": "#f4f4f4", "socks": "#d02a2a", "shoes": "#c03030" } },
-
-    { "id": "grimshaw", "name": "Mr Grimshaw", "role": "Neighbour", "group": "neighbour", "post": "grimshawPost", "facing": "down", "activity": "garden",
-      "look": { "skin": "#eec4a2", "hair": "bald", "hairColor": "#d8d8d8", "glasses": true, "shirt": "#6a7a4a", "trousers": "#4a4a40", "shoes": "#3a2a1a" } },
-    { "id": "pemberton", "name": "Mrs Pemberton", "role": "Neighbour (serial complainer)", "group": "neighbour", "post": "pembertonPost", "facing": "down", "activity": "garden",
-      "look": { "skin": "#f5d2b8", "hair": "curly", "hairColor": "#b0a0c0", "glasses": true, "shirt": "#a03050", "trousers": "#3a2a3a", "skirt": true, "shoes": "#222" } },
-    { "id": "nigel", "name": "Nosey Nigel", "role": "Neighbour", "group": "neighbour", "post": "nigelPost", "facing": "down", "activity": "garden",
-      "look": { "skin": "#e9bf9c", "hair": "short", "hairColor": "#6a4a2a", "beard": true, "shirt": "#e0e0e0", "trousers": "#3a4a6a", "build": "large", "shoes": "#2a1a10" } },
-
-    { "id": "noah", "name": "Noah", "role": "New player", "group": "arrival",
-      "look": { "kid": true, "skin": "#f0caa8", "hair": "short", "hairColor": "#6a3e1e", "shirt": "#3050c0", "trousers": "#202028", "socks": "#202028", "shoes": "#f0f0f0" } },
-    { "id": "freddie", "name": "Freddie", "role": "New player", "group": "arrival",
-      "look": { "kid": true, "skin": "#f2c8a8", "hair": "spiky", "hairColor": "#1a1a1a", "shirt": "#30a050", "trousers": "#2a2a30", "socks": "#2a2a30", "shoes": "#c03030" } },
-    { "id": "amelia", "name": "Amelia", "role": "New player", "group": "arrival",
-      "look": { "kid": true, "skin": "#b07850", "hair": "ponytail", "hairColor": "#141010", "shirt": "#f0a040", "trousers": "#20202a", "socks": "#20202a", "shoes": "#f0f0f0" } },
-    { "id": "oscar", "name": "Oscar", "role": "New player", "group": "arrival",
-      "look": { "kid": true, "skin": "#f5d2b8", "hair": "cap", "hairColor": "#3050a0", "shirt": "#f0d040", "trousers": "#2a2a35", "socks": "#2a2a35", "shoes": "#222" } },
-    { "id": "isla", "name": "Isla", "role": "New player", "group": "arrival",
-      "look": { "kid": true, "skin": "#f4d0b4", "hair": "bob", "hairColor": "#c87030", "shirt": "#a060d0", "trousers": "#202028", "socks": "#202028", "shoes": "#f080c0" } },
-
-    { "id": "darren", "name": "Dad-bod Darren", "role": "Touchline parent", "group": "parent",
-      "look": { "skin": "#e9bf9c", "hair": "short", "hairColor": "#3a2a1a", "shirt": "#5070c0", "trousers": "#3a3a3a", "build": "large", "shoes": "#2a1a10" } },
-    { "id": "sandra", "name": "Screaming Sandra", "role": "Touchline parent", "group": "parent",
-      "look": { "skin": "#f3cfb0", "hair": "long", "hairColor": "#f0d070", "shirt": "#f080c0", "trousers": "#202028", "shoes": "#f0f0f0" } },
-    { "id": "terry", "name": "Touchline Terry", "role": "Touchline parent", "group": "parent",
-      "look": { "skin": "#c68e64", "hair": "cap", "hairColor": "#c03030", "shirt": "#2a2a30", "hoodie": "#2a2a30", "trousers": "#3a3a48", "shoes": "#f0f0f0" } },
-
-    { "id": "lee", "name": "Lycra Lee", "role": "Cyclist", "group": "visitor",
-      "look": { "skin": "#f0c4a0", "hair": "helmet", "hairColor": "#e83030", "shirt": "#f4e030", "trousers": "#181818", "shoes": "#181818" } },
-    { "id": "alistair", "name": "Alistair", "role": "Banned (tea and biscuit thief)", "group": "visitor",
-      "look": { "skin": "#f2c8a8", "hair": "short", "hairColor": "#d0602a", "beard": true, "shirt": "#4a6a3a", "hoodie": "#4a6a3a", "trousers": "#3a5a8a", "shoes": "#3a2a1a" } },
-    { "id": "doreen", "name": "Dog Walker Doreen", "role": "Dog owner", "group": "visitor",
-      "look": { "skin": "#f4d0b4", "hair": "bob", "hairColor": "#a0a0a8", "shirt": "#3a7a4a", "trousers": "#4a3a2a", "shoes": "#3a2a1a" } },
-
-    { "id": "biscuit", "name": "Biscuit", "role": "Labrador", "group": "dog",
-      "look": { "dog": true, "coat": "#e0b860", "ears": "#c89840", "collar": "#d02a2a" } },
-    { "id": "tyson", "name": "Tyson", "role": "Staffie", "group": "dog",
-      "look": { "dog": true, "coat": "#6a6670", "ears": "#4a4650", "patch": "#f0f0f0", "collar": "#3050c0" } },
-    { "id": "princess", "name": "Princess", "role": "Pomeranian", "group": "dog",
-      "look": { "dog": true, "small": true, "coat": "#f0a050", "ears": "#e08a30", "collar": "#f080c0" } },
-
-    { "id": "chairman", "name": "The Club Chairman", "role": "Model Rovers JFC", "group": "portrait",
-      "look": { "skin": "#e8bc98", "hair": "short", "hairColor": "#c8c8c8", "glasses": true, "shirt": "#1f3f8a", "trousers": "#1a1a22", "tie": "#d02a2a", "shoes": "#111" } },
-    { "id": "coldcaller", "name": "Cold caller", "role": "Sales call", "group": "portrait",
-      "look": { "skin": "#f0c8a4", "hair": "spiky", "hairColor": "#2a2a2a", "headset": true, "shirt": "#e8e8f0", "trousers": "#222", "tie": "#c03030", "shoes": "#111" } }
-  ]
+ "_comment": "Rec ground cast. 'look' is only used by tools/make-placeholder-art.mjs to draw the placeholder sprites ('kid' draws a shorter body, 'dog' draws a dog). 'group': staff, kids and neighbours stand at their 'post' all day ('squad' says which training group a kid is in); arrivals, parents, visitors, walkers, Leeds-haters and dogs come in from outside when a task needs them; 'portrait' people are only seen on the phone or in meetings.",
+ "characters": [
+  {
+   "id": "andy",
+   "name": "Andy",
+   "role": "Head Coach",
+   "group": "andy",
+   "desk": "andy",
+   "look": {
+    "skin": "#f2c4a0",
+    "hair": "bald",
+    "hairColor": "#b9b9b9",
+    "glasses": true,
+    "shirt": "#1f3f8a",
+    "trousers": "#1a1f33",
+    "lanyard": true,
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "brenda",
+   "name": "Brenda",
+   "role": "Tea Hut",
+   "group": "staff",
+   "post": "brendaPost",
+   "facing": "down",
+   "look": {
+    "skin": "#f3cfb0",
+    "hair": "curly",
+    "hairColor": "#d0d0d8",
+    "shirt": "#c84a8a",
+    "trousers": "#2a2a35",
+    "skirt": true,
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "gaz",
+   "name": "Gaz",
+   "role": "Assistant Coach",
+   "group": "staff",
+   "post": "gazPost",
+   "facing": "up",
+   "activity": "watch",
+   "look": {
+    "skin": "#e9b88f",
+    "hair": "spiky",
+    "hairColor": "#e0c070",
+    "shirt": "#1f3f8a",
+    "trousers": "#1a1f33",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "alfie",
+   "name": "Little Alfie",
+   "role": "Under-8s",
+   "group": "kid",
+   "squad": "u8",
+   "post": "u8a",
+   "facing": "right",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#f2c8a8",
+    "hair": "spiky",
+    "hairColor": "#c87030",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "poppy",
+   "name": "Poppy",
+   "role": "Under-8s",
+   "group": "kid",
+   "squad": "u8",
+   "post": "u8b",
+   "facing": "left",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#f5d2b8",
+    "hair": "ponytail",
+    "hairColor": "#e0b050",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "mia",
+   "name": "Mia",
+   "role": "Under-8s",
+   "group": "kid",
+   "squad": "u8",
+   "post": "u8c",
+   "facing": "up",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#8d5a3b",
+    "hair": "bun",
+    "hairColor": "#1e1410",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "tyler",
+   "name": "Tyler",
+   "role": "Under-10s",
+   "group": "kid",
+   "squad": "u10",
+   "post": "u10a",
+   "facing": "left",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#a8714a",
+    "hair": "short",
+    "hairColor": "#121212",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#f0d040"
+   }
+  },
+  {
+   "id": "jayden",
+   "name": "Jayden",
+   "role": "Under-10s",
+   "group": "kid",
+   "squad": "u10",
+   "post": "u10b",
+   "facing": "left",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#f2c8a8",
+    "hair": "short",
+    "hairColor": "#d0a050",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#30a0f0"
+   }
+  },
+  {
+   "id": "ruby",
+   "name": "Ruby",
+   "role": "Under-10s",
+   "group": "kid",
+   "squad": "u10",
+   "post": "u10c",
+   "facing": "left",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#f1cbb0",
+    "hair": "long",
+    "hairColor": "#8a4a2a",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "kyle",
+   "name": "Kyle",
+   "role": "Under-12s",
+   "group": "kid",
+   "squad": "u12",
+   "post": "u12a",
+   "facing": "right",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#f0c8a8",
+    "hair": "cap",
+    "hairColor": "#202020",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "harvey",
+   "name": "Harvey",
+   "role": "Under-12s",
+   "group": "kid",
+   "squad": "u12",
+   "post": "u12b",
+   "facing": "left",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#c68e64",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "ollie",
+   "name": "Ollie",
+   "role": "Under-12s",
+   "group": "kid",
+   "squad": "u12",
+   "post": "u12c",
+   "facing": "left",
+   "activity": "play",
+   "look": {
+    "kid": true,
+    "skin": "#f2c8a8",
+    "hair": "curly",
+    "hairColor": "#e8c060",
+    "shirt": "#d02a2a",
+    "trousers": "#f4f4f4",
+    "socks": "#d02a2a",
+    "shoes": "#c03030"
+   }
+  },
+  {
+   "id": "grimshaw",
+   "name": "Mr Grimshaw",
+   "role": "Neighbour",
+   "group": "neighbour",
+   "post": "grimshawPost",
+   "facing": "down",
+   "activity": "garden",
+   "look": {
+    "skin": "#eec4a2",
+    "hair": "bald",
+    "hairColor": "#d8d8d8",
+    "glasses": true,
+    "shirt": "#6a7a4a",
+    "trousers": "#4a4a40",
+    "shoes": "#3a2a1a"
+   }
+  },
+  {
+   "id": "pemberton",
+   "name": "Mrs Pemberton",
+   "role": "Neighbour (serial complainer)",
+   "group": "neighbour",
+   "post": "pembertonPost",
+   "facing": "down",
+   "activity": "garden",
+   "look": {
+    "skin": "#f5d2b8",
+    "hair": "curly",
+    "hairColor": "#b0a0c0",
+    "glasses": true,
+    "shirt": "#a03050",
+    "trousers": "#3a2a3a",
+    "skirt": true,
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "nigel",
+   "name": "Nosey Nigel",
+   "role": "Neighbour",
+   "group": "neighbour",
+   "post": "nigelPost",
+   "facing": "down",
+   "activity": "garden",
+   "look": {
+    "skin": "#e9bf9c",
+    "hair": "short",
+    "hairColor": "#6a4a2a",
+    "beard": true,
+    "shirt": "#e0e0e0",
+    "trousers": "#3a4a6a",
+    "build": "large",
+    "shoes": "#2a1a10"
+   }
+  },
+  {
+   "id": "noah",
+   "name": "Noah",
+   "role": "New player",
+   "group": "arrival",
+   "look": {
+    "kid": true,
+    "skin": "#f0caa8",
+    "hair": "short",
+    "hairColor": "#6a3e1e",
+    "shirt": "#3050c0",
+    "trousers": "#202028",
+    "socks": "#202028",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "freddie",
+   "name": "Freddie",
+   "role": "New player",
+   "group": "arrival",
+   "look": {
+    "kid": true,
+    "skin": "#f2c8a8",
+    "hair": "spiky",
+    "hairColor": "#1a1a1a",
+    "shirt": "#30a050",
+    "trousers": "#2a2a30",
+    "socks": "#2a2a30",
+    "shoes": "#c03030"
+   }
+  },
+  {
+   "id": "amelia",
+   "name": "Amelia",
+   "role": "New player",
+   "group": "arrival",
+   "look": {
+    "kid": true,
+    "skin": "#b07850",
+    "hair": "ponytail",
+    "hairColor": "#141010",
+    "shirt": "#f0a040",
+    "trousers": "#20202a",
+    "socks": "#20202a",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "oscar",
+   "name": "Oscar",
+   "role": "New player",
+   "group": "arrival",
+   "look": {
+    "kid": true,
+    "skin": "#f5d2b8",
+    "hair": "cap",
+    "hairColor": "#3050a0",
+    "shirt": "#f0d040",
+    "trousers": "#2a2a35",
+    "socks": "#2a2a35",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "isla",
+   "name": "Isla",
+   "role": "New player",
+   "group": "arrival",
+   "look": {
+    "kid": true,
+    "skin": "#f4d0b4",
+    "hair": "bob",
+    "hairColor": "#c87030",
+    "shirt": "#a060d0",
+    "trousers": "#202028",
+    "socks": "#202028",
+    "shoes": "#f080c0"
+   }
+  },
+  {
+   "id": "darren",
+   "name": "Dad-bod Darren",
+   "role": "Touchline parent",
+   "group": "parent",
+   "look": {
+    "skin": "#e9bf9c",
+    "hair": "short",
+    "hairColor": "#3a2a1a",
+    "shirt": "#5070c0",
+    "trousers": "#3a3a3a",
+    "build": "large",
+    "shoes": "#2a1a10"
+   }
+  },
+  {
+   "id": "sandra",
+   "name": "Screaming Sandra",
+   "role": "Touchline parent",
+   "group": "parent",
+   "look": {
+    "skin": "#f3cfb0",
+    "hair": "long",
+    "hairColor": "#f0d070",
+    "shirt": "#f080c0",
+    "trousers": "#202028",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "terry",
+   "name": "Touchline Terry",
+   "role": "Touchline parent",
+   "group": "parent",
+   "look": {
+    "skin": "#c68e64",
+    "hair": "cap",
+    "hairColor": "#c03030",
+    "shirt": "#2a2a30",
+    "hoodie": "#2a2a30",
+    "trousers": "#3a3a48",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "lee",
+   "name": "Lycra Lee",
+   "role": "Cyclist",
+   "group": "visitor",
+   "look": {
+    "skin": "#f0c4a0",
+    "hair": "helmet",
+    "hairColor": "#e83030",
+    "shirt": "#f4e030",
+    "trousers": "#181818",
+    "shoes": "#181818"
+   }
+  },
+  {
+   "id": "alistair",
+   "name": "Alistair",
+   "role": "Banned (tea and biscuit thief)",
+   "group": "visitor",
+   "look": {
+    "skin": "#f2c8a8",
+    "hair": "short",
+    "hairColor": "#d0602a",
+    "beard": true,
+    "shirt": "#4a6a3a",
+    "hoodie": "#4a6a3a",
+    "trousers": "#3a5a8a",
+    "shoes": "#3a2a1a"
+   }
+  },
+  {
+   "id": "doreen",
+   "name": "Dog Walker Doreen",
+   "role": "Dog owner",
+   "group": "visitor",
+   "look": {
+    "skin": "#f4d0b4",
+    "hair": "bob",
+    "hairColor": "#a0a0a8",
+    "shirt": "#3a7a4a",
+    "trousers": "#4a3a2a",
+    "shoes": "#3a2a1a"
+   }
+  },
+  {
+   "id": "matt",
+   "name": "Collector Matt",
+   "role": "Buys football shirts",
+   "group": "visitor",
+   "look": {
+    "skin": "#eec4a2",
+    "hair": "short",
+    "hairColor": "#5a3a1a",
+    "glasses": true,
+    "shirt": "#f0f0f0",
+    "trousers": "#2a3a5a",
+    "shoes": "#f0f0f0",
+    "tie": "#f0d040"
+   }
+  },
+  {
+   "id": "sue",
+   "name": "Shortcut Sue",
+   "role": "Walks across the pitch",
+   "group": "walker",
+   "look": {
+    "skin": "#f4d0b4",
+    "hair": "bob",
+    "hairColor": "#3a2a1a",
+    "shirt": "#7a4aa0",
+    "trousers": "#2a2a35",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "harry",
+   "name": "Headphones Harry",
+   "role": "Walks across the pitch",
+   "group": "walker",
+   "look": {
+    "skin": "#c68e64",
+    "hair": "short",
+    "hairColor": "#1a1a1a",
+    "headset": true,
+    "shirt": "#40a0a0",
+    "hoodie": "#40a0a0",
+    "trousers": "#2a2a30",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "bob",
+   "name": "Banter Bob",
+   "role": "Hates Leeds United",
+   "group": "banter",
+   "look": {
+    "skin": "#f0b890",
+    "hair": "bald",
+    "hairColor": "#8a6a4a",
+    "shirt": "#d8202a",
+    "trousers": "#f4f4f4",
+    "build": "large",
+    "shoes": "#222"
+   }
+  },
+  {
+   "id": "gav",
+   "name": "Gobby Gav",
+   "role": "Hates Leeds United",
+   "group": "banter",
+   "look": {
+    "skin": "#e9b88f",
+    "hair": "cap",
+    "hairColor": "#5aa0e0",
+    "shirt": "#6ab0e8",
+    "trousers": "#f4f4f4",
+    "shoes": "#f0f0f0"
+   }
+  },
+  {
+   "id": "biscuit",
+   "name": "Biscuit",
+   "role": "Labrador",
+   "group": "dog",
+   "look": {
+    "dog": true,
+    "coat": "#e0b860",
+    "ears": "#c89840",
+    "collar": "#d02a2a"
+   }
+  },
+  {
+   "id": "tyson",
+   "name": "Tyson",
+   "role": "Staffie",
+   "group": "dog",
+   "look": {
+    "dog": true,
+    "coat": "#6a6670",
+    "ears": "#4a4650",
+    "patch": "#f0f0f0",
+    "collar": "#3050c0"
+   }
+  },
+  {
+   "id": "princess",
+   "name": "Princess",
+   "role": "Pomeranian",
+   "group": "dog",
+   "look": {
+    "dog": true,
+    "small": true,
+    "coat": "#f0a050",
+    "ears": "#e08a30",
+    "collar": "#f080c0"
+   }
+  },
+  {
+   "id": "chairman",
+   "name": "The Club Chairman",
+   "role": "Model Rovers JFC",
+   "group": "portrait",
+   "look": {
+    "skin": "#e8bc98",
+    "hair": "short",
+    "hairColor": "#c8c8c8",
+    "glasses": true,
+    "shirt": "#1f3f8a",
+    "trousers": "#1a1a22",
+    "tie": "#d02a2a",
+    "shoes": "#111"
+   }
+  },
+  {
+   "id": "coldcaller",
+   "name": "Cold caller",
+   "role": "Sales call",
+   "group": "portrait",
+   "look": {
+    "skin": "#f0c8a4",
+    "hair": "spiky",
+    "hairColor": "#2a2a2a",
+    "headset": true,
+    "shirt": "#e8e8f0",
+    "trousers": "#222",
+    "tie": "#c03030",
+    "shoes": "#111"
+   }
+  }
+ ]
 }

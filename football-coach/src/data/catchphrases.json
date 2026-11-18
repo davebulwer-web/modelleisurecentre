@@ -1,5 +1,5 @@
 {
-  "_comment": "Andy's lines, rotated with no immediate repeats. Add as many as you like. 'chairman' = what the Club Chairman says in meetings; 'grumbles' play when a task is missed; 'excuses' are what kids say when Andy has a go; 'trouble' = what each kind of trouble shouts; 'parents' = touchline parents; 'dogs' = dog barks and the owner's lines; 'alistair' = Alistair's lines; 'neighbours' = what the neighbours complain about; 'drills' = what Andy shouts while coaching; 'whatsapp' = the parents' WhatsApp group.",
+  "_comment": "Andy's lines, rotated with no immediate repeats. Add as many as you like. 'chairman' = what the Club Chairman says in meetings; 'grumbles' play when a task is missed; 'excuses' are what kids say when Andy has a go; 'trouble' = what each kind of trouble shouts; 'parents' = touchline parents; 'dogs' = dog barks and the owner's lines; 'alistair' = Alistair's lines; 'neighbours' = what the neighbours complain about; 'drills' = what Andy shouts while coaching; 'whatsapp' = the parents' WhatsApp group. 'matt' = Collector Matt's offers; 'walkers' = people wandering across the pitch; 'leedsBanter' = people bad-mouthing Leeds United; 'leedsReplies' = Andy putting them right.",
   "catchphrases": [
     "You don't get the gig!",
     "Worse than my ex-wife.",
@@ -38,7 +38,10 @@
     "Hands off the crossbar!",
     "I've seen better first touches on a trampoline.",
     "Somebody's left a shin pad in the urn. AGAIN.",
-    "Under-tens. Under-trained. Under my skin."
+    "Under-tens. Under-trained. Under my skin.",
+    "Marching On Together!",
+    "Leeds! Leeds! Leeds!",
+    "We're Leeds and we're proud of it."
   ],
   "grumbles": [
     "Grrr...",
@@ -176,5 +179,36 @@
     "Coach, can you do pick-up for 8 kids?",
     "Training at 7am Sunday?? Is this a JOKE",
     "Thumbs up if you're coming! (23 thumbs. 4 kids turn up.)"
+  ],
+  "matt": [
+    "I'll give you forty quid for the Under-8s' shirts.",
+    "Is this the 1992 away kit? Mint condition?",
+    "Got any match-worn? Unwashed is fine.",
+    "Signed by the Under-10s? I'll take the lot.",
+    "Do these come in an XXL?",
+    "I've got 412 shirts. I need 413."
+  ],
+  "walkers": [
+    "*walks straight through the drill*",
+    "Shortcut to Greggs!",
+    "*can't hear you, headphones*",
+    "It's a public footpath, isn't it?",
+    "Don't mind me!",
+    "Just cutting through!"
+  ],
+  "leedsBanter": [
+    "Leeds are going down!",
+    "Dirty Leeds!",
+    "When did Leeds last win anything? 1992?",
+    "Marching on together... to the Championship!",
+    "Leeds? Never heard of 'em.",
+    "Leeds are a pub team!"
+  ],
+  "leedsReplies": [
+    "Marching On Together! Now OUT.",
+    "Wash your mouth out!",
+    "Leeds are the greatest club in the world. END OF.",
+    "You're not fit to wipe Billy Bremner's boots!",
+    "We're Leeds and we're proud of it!"
   ]
 }

@@ -177,6 +177,16 @@ export class Renderer {
       if (!t.spot) continue;
       if (t.type === 'poo' || (t.type === 'changing' && t.variant !== 'blocked')) obj(t.variant!, t.spot.x - 8, t.spot.y - 6);
       if (t.type === 'ball') obj('ball', t.spot.x - 3, t.spot.y - 3 - Math.abs(Math.sin(this.t * 5)) * 2);
+      if (t.type === 'burst') {
+        // a flat, burst ball
+        ctx.fillStyle = '#1a1420';
+        ctx.fillRect(Math.round(t.spot.x - 5), Math.round(t.spot.y - 2), 10, 4);
+        ctx.fillStyle = '#e8e8e8';
+        ctx.fillRect(Math.round(t.spot.x - 4), Math.round(t.spot.y - 1), 8, 2);
+        ctx.fillStyle = '#222';
+        ctx.fillRect(Math.round(t.spot.x - 1), Math.round(t.spot.y - 1), 2, 1);
+        this.flashLabel('POP', t.spot.x, t.spot.y - 14);
+      }
     }
 
     // y-sorted drawables
@@ -268,7 +278,9 @@ export class Renderer {
 
   /** A ball passed round each happy training group. */
   private drawTrainingBalls(g: Game, obj: (name: string, px: number, py: number) => void) {
+    const burst = g.burstSquads();
     for (const squad of SQUADS) {
+      if (burst.includes(squad)) continue;
       const kids = g.npcs.filter((n) => !n.hidden && n.seated && !n.busy && n.activity === 'play' && g.squadOf(n) === squad);
       if (kids.length < 2) continue;
       const speed = 0.7;
@@ -361,7 +373,7 @@ export class Renderer {
     const frac = task.timeLeft / task.timeLimit;
     const col = frac < 0.33 ? C.bad : C.warn;
     const bob = Math.sin(this.t * 6) * 2;
-    const y = pos.y - (['poo', 'changing', 'ball', 'net', 'balls', 'drill', 'chairman'].includes(task.type) ? 22 : 34) + bob;
+    const y = pos.y - (['poo', 'changing', 'ball', 'net', 'balls', 'drill', 'chairman', 'burst'].includes(task.type) ? 22 : 34) + bob;
     ctx.fillStyle = '#000';
     ctx.beginPath();
     ctx.moveTo(pos.x - 6, y - 1); ctx.lineTo(pos.x + 6, y - 1); ctx.lineTo(pos.x, y + 7); ctx.closePath();
@@ -371,7 +383,7 @@ export class Renderer {
     ctx.moveTo(pos.x - 4, y); ctx.lineTo(pos.x + 4, y); ctx.lineTo(pos.x, y + 5); ctx.closePath();
     ctx.fill();
     this.icon(task.icon, pos.x - 8, y - 17);
-    if (task.npc && ['trouble', 'dog', 'parent', 'lee'].includes(task.type)) {
+    if (task.npc && ['trouble', 'dog', 'parent', 'lee', 'walker', 'leeds', 'matt'].includes(task.type)) {
       ctx.font = `10px ${FONT}`;
       ctx.textAlign = 'center';
       this.outlinedText(task.npc.name, pos.x, y - 26, col);
@@ -789,18 +801,19 @@ export class Renderer {
       'Deal with each task before its timer runs out or his ANGER rises.',
       'Run the drills, sign in new kids, chase dogs off the pitch, scoop the poop, keep the',
       'changing rooms clean, get the balls back from next door, fob off the neighbours,',
-      'shut up the touchline parents, throw Alistair out of the tea hut and survive the Chairman.',
+      'shut up the touchline parents, stop Collector Matt buying the kit, get walkers off the pitch,',
+      'replace burst balls, defend the honour of Leeds United and survive the Chairman.',
       'Keep BLADDER (the loos) and THIRST (tea from the tea hut urn) under control.',
       'Survive until the final whistle at 5pm. If anger hits 100%... MELTDOWN.',
     ];
     lines.forEach((l, i) => ctx.fillText(l, VIEW_W / 2, 160 + i * 16));
     ctx.fillStyle = C.dim;
-    ctx.fillText('Move: WASD / arrows / joystick     Act: hold E or Space / ACT button', VIEW_W / 2, 284);
-    ctx.fillText('A / D to sign in or send home, fob off or sort calls     P pause     M mute', VIEW_W / 2, 300);
+    ctx.fillText('Move: WASD / arrows / joystick     Act: hold E or Space / ACT button', VIEW_W / 2, 294);
+    ctx.fillText('A / D to sign in or send home, fob off or sort calls     P pause     M mute', VIEW_W / 2, 310);
     if (Math.floor(this.t * 2) % 2 === 0) {
       ctx.font = `12px ${TITLE_FONT}`;
       ctx.fillStyle = C.warn;
-      ctx.fillText('PRESS SPACE OR TAP TO START', VIEW_W / 2, 336);
+      ctx.fillText('PRESS SPACE OR TAP TO START', VIEW_W / 2, 340);
     }
     ctx.font = `12px ${FONT}`;
     ctx.fillStyle = C.dim;

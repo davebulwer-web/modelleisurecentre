@@ -2,10 +2,12 @@ import { type Rng, range } from '../core/rng';
 
 export type EventType =
   | 'signin' | 'drill' | 'dog' | 'poo' | 'changing' | 'neighbour' | 'ball' | 'parent' | 'trouble'
-  | 'injury' | 'net' | 'balls' | 'alistair' | 'lee' | 'assistant' | 'phone' | 'chairman';
+  | 'injury' | 'net' | 'balls' | 'alistair' | 'lee' | 'assistant' | 'phone' | 'chairman'
+  | 'matt' | 'walker' | 'burst' | 'leeds';
 export const EVENT_TYPES: EventType[] = [
   'signin', 'drill', 'dog', 'poo', 'changing', 'neighbour', 'ball', 'parent', 'trouble',
   'injury', 'net', 'balls', 'alistair', 'lee', 'assistant', 'phone', 'chairman',
+  'matt', 'walker', 'burst', 'leeds',
 ];
 
 export interface EventDef {

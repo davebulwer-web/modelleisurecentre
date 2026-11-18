@@ -1,5 +1,5 @@
 /** Placeholder synthesised sound effects (WebAudio). Swap in samples later if you like. */
-export type Sfx = 'step' | 'alert' | 'done' | 'fail' | 'rant' | 'tea' | 'flush' | 'car' | 'boss' | 'click' | 'meltdown' | 'dayEnd' | 'wrong' | 'ring' | 'whistle' | 'thump' | 'splash' | 'bark' | 'ping' | 'kick' | 'chimes' | 'pump';
+export type Sfx = 'step' | 'alert' | 'done' | 'fail' | 'rant' | 'tea' | 'flush' | 'car' | 'boss' | 'click' | 'meltdown' | 'dayEnd' | 'wrong' | 'ring' | 'whistle' | 'thump' | 'splash' | 'bark' | 'ping' | 'kick' | 'chimes' | 'pump' | 'pop';
 
 export class Audio {
   private ctx: AudioContext | null = null;
@@ -80,6 +80,7 @@ export class Audio {
       case 'kick': this.tone(120, 0.08, 'square', 0.1, 0, 60); this.noise(0.05, 0.06, 0, 2000, 300); break;
       case 'chimes': [784, 659, 784, 523, 587, 659, 523].forEach((f, i) => this.tone(f, 0.16, 'triangle', 0.05, i * 0.16)); break;
       case 'pump': for (let i = 0; i < 4; i++) this.noise(0.12, 0.08, i * 0.2, 3000, 800); break;
+      case 'pop': this.noise(0.25, 0.18, 0, 6000, 200); this.tone(70, 0.2, 'square', 0.1, 0, 35); break;
       case 'meltdown': this.tone(300, 1.2, 'sawtooth', 0.09, 0, 50); this.noise(1.2, 0.08, 0.1); break;
     }
   }

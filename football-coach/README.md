@@ -28,6 +28,10 @@ Random **tasks** pop up in the panel on the right, each with a timer. Walk to th
 - **Alistair's back**: still banned, now nicking tea and biscuits from the tea hut hatch.
 - **Lycra Lee** is doing laps of the touchline on his bike. Stop him.
 - **Gaz is on his phone**: nobody is watching the kids.
+- **Collector Matt** is in the changing rooms trying to buy the kids' shirts off the pegs. They are NOT for sale.
+- **Someone on the pitch**: Shortcut Sue or Headphones Harry wandering straight through training. Get them off.
+- **Burst ball**: BANG. A training group's ball has popped; bin it and get a spare out.
+- **Bad-mouthing Leeds**: Banter Bob, Gobby Gav or one of the kids slagging off Leeds United. Andy takes this very personally: ignoring it costs the most anger, and putting them right calms him the most.
 - **Phone**: the office phone, Andy's mobile, or the **parents' WhatsApp group** (Mute it or Reply). Hang up on cold callers.
 - **The Club Chairman**: every third fob-off in a day (or at random) he wants a meeting in the office. Andy is stuck there for a few seconds while the other timers keep running.
 - **Bladder** and **thirst** rise slowly. Use the **loos** and make **tea** at the tea hut urn.
@@ -73,7 +77,7 @@ Everything you'd want to tweak is in `src/data/`:
 
 | File | What it holds |
 |---|---|
-| `catchphrases.json` | Andy's catchphrases and grumbles, kids' excuses, trouble shouts, touchline parents, dogs and their owner, the Chairman's lines, Alistair's lines, neighbours' complaints, drill shouts and the WhatsApp messages. |
+| `catchphrases.json` | Andy's catchphrases and grumbles, kids' excuses, Collector Matt's offers, pitch walkers, the Leeds banter and Andy's replies, trouble shouts, touchline parents, dogs and their owner, the Chairman's lines, Alistair's lines, neighbours' complaints, drill shouts and the WhatsApp messages. |
 | `phonecalls.json` | Who rings, what they want, Andy's fob-offs, plus the cold callers and their pitches. |
 | `tuning.json` | Hours, day length, walking speeds (Andy, kids, dogs, Lycra Lee), bladder and thirst, difficulty ramp. |
 | `events.json` | Each task type: how often it appears, time limit, hold time, anger penalty, calm reward, points. |

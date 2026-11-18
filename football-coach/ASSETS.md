@@ -19,7 +19,7 @@ One sheet per person: **16x24 px frames, 3 columns x 6 rows (48x144 px)**. The f
 | 4 | Work: sat at a desk, seen from behind, typing | 3 frames |
 | 5 | Shout / rant / laugh (facing camera) | point, mouth open, arm raised |
 
-Ids: `andy`; staff `brenda`, `gaz`; kids `alfie`, `poppy`, `mia`, `tyler`, `jayden`, `ruby`, `kyle`, `harvey`, `ollie`; new players `noah`, `freddie`, `amelia`, `oscar`, `isla`; neighbours `grimshaw`, `pemberton`, `nigel`; parents `darren`, `sandra`, `terry`; visitors `lee`, `alistair`, `doreen`; dogs `biscuit`, `tyson`, `princess`.
+Ids: `andy`; staff `brenda`, `gaz`; kids `alfie`, `poppy`, `mia`, `tyler`, `jayden`, `ruby`, `kyle`, `harvey`, `ollie`; new players `noah`, `freddie`, `amelia`, `oscar`, `isla`; neighbours `grimshaw`, `pemberton`, `nigel`; parents `darren`, `sandra`, `terry`; visitors `lee`, `alistair`, `doreen`, `matt`; pitch walkers `sue`, `harry`; Leeds-haters `bob`, `gav`; dogs `biscuit`, `tyson`, `princess`.
 
 Kids use the same layout, drawn shorter (their feet still sit at the bottom of the frame). Dogs use it too: the dog sits in the bottom of each frame, and the shout row is barking.
 

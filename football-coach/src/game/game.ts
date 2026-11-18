@@ -146,6 +146,7 @@ export class Game {
     const P = phrasesJson, C = callsJson;
     const lists: Record<string, string[]> = {
       catchphrases: P.catchphrases, grumbles: P.grumbles, excuses: P.excuses, chairman: P.chairman, drills: P.drills,
+      matt: P.matt, walkers: P.walkers, leedsBanter: P.leedsBanter, leedsReplies: P.leedsReplies,
       parents: P.parents, dogs: P.dogs, owner: P.owner, neighbours: P.neighbours, whatsapp: P.whatsapp,
       alSneak: P.alistair.sneaking, alCaught: P.alistair.caught, alExcuses: P.alistair.excuses, alEscaped: P.alistair.escaped,
       requests: C.requests, callers: C.callers, brushOffs: C.brushOffs, ticketLines: C.ticketLines,
@@ -361,7 +362,7 @@ export class Game {
   private doHold(it: Interactable, dt: number) {
     const a = this.andy;
     a.face(it.pos.x - a.x, it.pos.y - a.y);
-    const loud = it.task && ['trouble', 'parent', 'dog', 'lee', 'alistair', 'assistant', 'drill'].includes(it.task.type);
+    const loud = it.task && ['trouble', 'parent', 'dog', 'lee', 'alistair', 'assistant', 'drill', 'matt', 'walker', 'leeds'].includes(it.task.type);
     a.pose = loud ? 'shout' : a.dir === 'up' ? 'work' : 'stand';
     const inc = dt / it.hold;
     if (it.kind === 'tea') {
@@ -389,7 +390,7 @@ export class Game {
       // whoever Andy is dealing with stops where they are until he's done
       const n = t.npc;
       if (n && !n.hidden && dist(n, a) < 34) { n.stopped = 0.25; n.face(a.x - n.x, a.y - n.y); }
-      if ((t.type === 'dog' || t.type === 'lee') && n) n.stopped = 0.25;
+      if ((t.type === 'dog' || t.type === 'lee' || t.type === 'walker') && n) n.stopped = 0.25;
       if (t.type === 'drill' && Math.floor((t.progress + inc) * 3) > Math.floor(t.progress * 3)) {
         this.sfx('whistle');
         a.say(this.line('drills'), 1.2, 'andy');
@@ -465,6 +466,10 @@ export class Game {
       case 'assistant': return !this.has('assistant') && this.free((n) => n.id === 'gaz' && n.seated).length > 0;
       case 'phone': return !this.has('phone') && !this.modal;
       case 'chairman': return !this.has('chairman') && !this.modal;
+      case 'matt': return !this.has('matt') && this.outside('visitor').some((n) => n.id === 'matt');
+      case 'walker': return !this.has('walker') && this.outside('walker').length > 0;
+      case 'burst': return this.burstableSquads().length > 0;
+      case 'leeds': return !this.has('leeds') && (this.outside('banter').length > 0 || this.kidsAtPost().length > 0);
     }
   }
 
@@ -487,6 +492,10 @@ export class Game {
       case 'assistant': this.spawnAssistant(); break;
       case 'phone': this.spawnPhone(); break;
       case 'chairman': this.spawnChairman(); break;
+      case 'matt': this.spawnMatt(); break;
+      case 'walker': this.spawnWalker(); break;
+      case 'burst': this.spawnBurst(); break;
+      case 'leeds': this.spawnLeeds(); break;
     }
   }
 
@@ -920,6 +929,108 @@ export class Game {
     this.banner = { text: 'Assistant coach Gaz has gone AWOL...', t: 2.5 };
   }
 
+  // ---- Collector Matt, after the kids' shirts
+
+  private spawnMatt() {
+    const matt = this.npc('matt');
+    this.walkIn(matt, this.map.point('pegsSpot'), () => { matt.dir = 'up'; matt.activity = 'shirts'; matt.say(this.line('matt'), 2.6); });
+    matt.say('Any shirts for sale?', 2.4);
+    this.baseTask('matt', {
+      title: 'Collector Matt is back',
+      detail: "He's trying to buy the kids' shirts",
+      icon: 'kit',
+      portrait: 'matt',
+      verb: 'NOT FOR SALE, Matt',
+      npc: matt,
+      target: () => (matt.path ? null : { x: matt.x, y: matt.y }),
+    });
+    this.banner = { text: 'Collector Matt is heading for the changing rooms...', t: 2.5 };
+  }
+
+  // ---- people wandering across the pitch
+
+  private spawnWalker() {
+    const n = pick(this.rng, this.outside('walker'));
+    const wander = () => {
+      if (!n.busy || n.hidden) return;
+      n.activity = 'wander';
+      n.path = [this.pitchPoint()];
+      n.onArrive = wander;
+      if (this.rng() < 0.4) n.say(this.line('walkers'), 1.8);
+    };
+    this.walkIn(n, this.pitchPoint(), wander, this.rng() < 0.5 ? 'parkGate' : 'carParkGate');
+    n.say(this.line('walkers'), 2);
+    this.baseTask('walker', {
+      title: 'Someone on the pitch',
+      detail: `${n.name} is walking through training`,
+      icon: 'walk',
+      portrait: n.id,
+      verb: 'Get them off the pitch',
+      npc: n,
+      radius: this.tuning.interactRadius + 4,
+      target: () => ({ x: n.x, y: n.y }),
+    });
+  }
+
+  // ---- burst balls
+
+  /** Training groups whose ball could go pop. */
+  burstableSquads(): Squad[] {
+    return SQUADS.filter((s) => !this.tasks.some((t) => t.type === 'burst' && t.squad === s) && this.kidsAtPost(s).length >= 2);
+  }
+
+  burstSquads(): Squad[] {
+    return this.tasks.filter((t) => t.type === 'burst').map((t) => t.squad!);
+  }
+
+  private spawnBurst() {
+    const squad = pick(this.rng, this.burstableSquads());
+    const st = this.map.point(STATION[squad]);
+    const spot = { x: st.x + 10, y: st.y + 6 };
+    const kid = pick(this.rng, this.kidsAtPost(squad));
+    kid.say(pick(this.rng, ['BANG! Not me!', 'The ball popped!', 'It just exploded, Coach!']), 2.2);
+    this.sfx('pop');
+    this.baseTask('burst', {
+      title: `${squadName(squad)} burst the ball`,
+      detail: 'BANG. That was the last good one.',
+      icon: 'ball',
+      verb: 'Bin it, get a spare out',
+      squad,
+      spot,
+      target: () => spot,
+    });
+  }
+
+  // ---- bad-mouthing Leeds United
+
+  private spawnLeeds() {
+    const pool = this.outside('banter');
+    const shout = (n: Npc) => n.say(this.line('leedsBanter'), 2.4);
+    let n: Npc;
+    if (pool.length && (this.rng() < 0.7 || !this.kidsAtPost().length)) {
+      n = pick(this.rng, pool);
+      const used = this.tasks.filter((t) => t.type === 'parent').map((t) => t.variant);
+      const where = pick(this.rng, ['touch1', 'touch2', 'touch3'].filter((k) => !used.includes(k)).concat(['touch2']));
+      this.walkIn(n, this.map.point(where), () => { n.dir = 'up'; n.activity = 'banter'; shout(n); });
+    } else {
+      n = pick(this.rng, this.kidsAtPost());
+      n.busy = true;
+      n.activity = 'banter';
+      shout(n);
+    }
+    this.baseTask('leeds', {
+      title: 'Bad-mouthing Leeds!',
+      detail: `${n.name} is slagging off Leeds United`,
+      icon: 'rant',
+      portrait: n.id,
+      verb: "Defend Leeds' honour",
+      npc: n,
+      radius: this.tuning.interactRadius + 4,
+      target: () => (n.path ? null : { x: n.x, y: n.y }),
+    });
+    this.banner = { text: 'Somebody is slagging off LEEDS...', t: 2.5 };
+  }
+
   // ---- the phone in the office (or Andy's mobile, or the parents' WhatsApp)
 
   private spawnPhone() {
@@ -1081,6 +1192,21 @@ export class Game {
         this.completeTask(t, pick(this.rng, ['Sorry! Lovely roses...', 'Got it. Back over the fence.', 'Ball. Mine. Thank you.']));
         return;
       }
+      case 'matt':
+        this.completeTask(t, pick(this.rng, ["They're NOT for sale, Matt!", "Put the Under-8s' shirts DOWN.", 'Out. And take your 412 shirts with you.']));
+        return;
+      case 'walker':
+        this.sfx('whistle');
+        this.completeTask(t, pick(this.rng, ["It's a football pitch, not a footpath!", 'Round the edge! THE EDGE!', 'Off. The. Pitch.']));
+        return;
+      case 'burst':
+        this.sfx('pump');
+        this.completeTask(t, pick(this.rng, ['Sixteen quid, that ball.', 'Who keeps sitting on them?!', 'Spare ball. LAST spare ball.']));
+        return;
+      case 'leeds':
+        this.sfx('rant');
+        this.completeTask(t, this.line('leedsReplies'));
+        return;
       case 'trouble':
       case 'parent':
         this.sfx(t.variant === 'scrap' || t.variant === 'goal' ? 'whistle' : 'rant');
@@ -1099,7 +1225,7 @@ export class Game {
     this.score += pts;
     this.stats.score += pts;
     this.stats.done++;
-    if (!['trouble', 'parent', 'balls', 'injury', 'dog', 'drill'].includes(t.type)) this.sfx('done');
+    if (!['trouble', 'parent', 'balls', 'injury', 'dog', 'drill', 'walker', 'burst', 'leeds'].includes(t.type)) this.sfx('done');
     this.toast(`+${pts}`, this.andy, '#ff6');
     if (release) this.releaseNpc(t, true);
     if (line) this.andy.say(line, 2.4, 'andy');
@@ -1119,6 +1245,8 @@ export class Game {
       ball: `${owner} kept the ball!`, parent: 'Parents are fighting!', trouble: 'Chaos!', injury: 'Off to A&E...', net: 'Goal disallowed!',
       balls: 'Training with flat balls...', alistair: 'Alistair ate ALL the biscuits!', lee: 'Lee ran over a cone!',
       assistant: 'Kids climbed the floodlights!', phone: 'Missed call', chairman: 'The Chairman is NOT happy',
+      matt: 'Matt bought the Under-10s kit!', walker: 'They walked right through the drill!', burst: 'Training with a burst ball...',
+      leeds: 'Nobody defended Leeds!',
     };
     this.toast(`${msgs[t.type]} +${d.angerOnFail} anger`, this.andy, '#f88');
     if (!this.andy.hidden) this.andy.say(this.line('grumbles'), 2, 'andy');
@@ -1143,13 +1271,16 @@ export class Game {
     else if (t.type === 'signin') n.say(scolded ? 'Ta.' : 'Forget it!', 2);
     else if (t.type === 'neighbour') n.say(scolded ? 'Hmph.' : "I'm writing to the council!", 2.2);
     else if (t.type === 'parent') n.say(scolded ? 'Alright, alright. Keep your hair on.' : 'My kid should be CAPTAIN!', 2);
+    else if (t.type === 'matt') n.say(scolded ? "I'll be back. With cash." : 'Got the lot! Cheers!', 2.2);
+    else if (t.type === 'walker') n.say(scolded ? 'Alright! Keep your hair on!' : 'Bye then!', 2);
+    else if (t.type === 'leeds') n.say(scolded ? 'Alright! Calm down, Andy!' : 'LEEDS ARE RUBBISH!', 2.2);
     else if (t.type === 'lee') n.say(scolded ? 'Bit rude. Off to the cafe.' : 'New PB! Cheers!', 2);
     else if (scolded) n.say(this.line('excuses'), 2);
     if (t.type === 'lee') n.speed = this.tuning.npcSpeed;
     if (n.post) {
       if (t.type === 'assistant' || t.type === 'injury') { n.busy = false; n.sitDown(); }
       else n.goHome(this.map);
-    } else this.leave(n, scolded && (t.type === 'alistair' || t.type === 'dog' || t.type === 'lee'), t.type === 'dog' || t.type === 'lee' ? 'park' : 'carpark');
+    } else this.leave(n, scolded && ['alistair', 'dog', 'lee', 'matt', 'leeds'].includes(t.type), t.type === 'dog' || t.type === 'lee' ? 'park' : 'carpark');
   }
 
   private meltdown() {
