@@ -1,0 +1,25 @@
+{
+  "_comment": "The cast. 'look' is only used by tools/make-placeholder-art.mjs to draw the placeholder skiers. hair: bald, slick, ginger, beanie, cap, bobble, rocker, helmet, short, long. 'kid' draws a smaller skier, 'board' gives them a snowboard instead of skis, 'build': 'large' draws a wider body. 'mate': true marks Andy's mates (they get scrapes and portraits on the task panel).",
+  "characters": [
+    { "id": "andy", "name": "Andy", "role": "Trip organiser (allegedly)", "look": { "skin": "#f2c4a0", "hair": "bald", "hairColor": "#b9b9b9", "glasses": true, "jacket": "#f4f4f4", "trim": "#1f3f8a", "stripe": "#f0c020", "trousers": "#1f3f8a", "skis": "#f0c020" } },
+
+    { "id": "steve", "name": "Kinky Steve", "role": "Leopard-print onesie", "mate": true, "look": { "skin": "#eec29c", "hair": "slick", "hairColor": "#2a1a10", "moustache": true, "jacket": "#e0a830", "spots": "#5a3510", "trousers": "#e0a830", "skis": "#e03a8a" } },
+    { "id": "jimmy", "name": "Jimmy Ginge", "role": "Factor 50, never used", "mate": true, "look": { "skin": "#f4a088", "hair": "ginger", "hairColor": "#e0601a", "beard": true, "jacket": "#2f8a4a", "trim": "#1d5a30", "trousers": "#333340", "skis": "#3a6ae0" } },
+    { "id": "plug", "name": "Plug", "role": "Falls over a lot", "mate": true, "look": { "skin": "#e9b88f", "hair": "beanie", "hairColor": "#c02a2a", "build": "large", "jacket": "#d0602a", "trim": "#a04018", "trousers": "#2a2a3a", "skis": "#30c0c0" } },
+    { "id": "kft", "name": "KFT", "role": "Has the piste map (upside down)", "mate": true, "look": { "skin": "#e8b48a", "hair": "cap", "hairColor": "#26262e", "hairUnder": "#5a3a20", "jacket": "#f08a20", "trim": "#2a2a2a", "trousers": "#3a3a5a", "skis": "#e8e8e8" } },
+    { "id": "sid", "name": "Sid", "role": "Can sleep anywhere", "mate": true, "look": { "skin": "#f0c8a8", "hair": "bobble", "hairColor": "#7a3ac0", "bobble": "#f4f4f4", "hairUnder": "#6a4a2a", "goggles": true, "jacket": "#6a4ab0", "trim": "#4a2a90", "trousers": "#222230", "skis": "#f05a3a" } },
+    { "id": "rocker", "name": "Aging Rocker", "role": "No helmet. Ruins the hair.", "mate": true, "look": { "skin": "#e6b898", "hair": "rocker", "hairColor": "#d0d0d0", "shades": true, "jacket": "#1a1a1e", "trim": "#c0c0c8", "trousers": "#2a2228", "skis": "#d02a2a" } },
+
+    { "id": "lee", "name": "Lycra Lee", "role": "Speed suit. Of course.", "look": { "skin": "#f0c4a0", "hair": "helmet", "hairColor": "#f0f020", "shades": true, "jacket": "#ff3aa0", "stripe": "#f0f020", "trousers": "#ff3aa0", "skis": "#f0f020", "slim": true } },
+    { "id": "alistair", "name": "Alistair", "role": "Banned from the resort", "look": { "skin": "#f0c8b0", "hair": "ginger", "hairColor": "#d8642a", "beard": true, "jacket": "#6a6a72", "trim": "#4a4a52", "trousers": "#3a3a3a", "skis": "#a0a0a0" } },
+    { "id": "bob", "name": "Banter Bob", "role": "Not a Leeds fan", "look": { "skin": "#f0c0a0", "hair": "bobble", "hairColor": "#d02020", "bobble": "#f4f4f4", "hairUnder": "#3a2a1a", "jacket": "#c02020", "trim": "#f4f4f4", "trousers": "#202020", "skis": "#202020" } },
+    { "id": "mireille", "name": "Mireille", "role": "Ski instructor", "look": { "skin": "#d09868", "hair": "long", "hairColor": "#3a2a1a", "shades": true, "jacket": "#d02020", "trim": "#f4f4f4", "trousers": "#202a50", "skis": "#f4f4f4" } },
+    { "id": "kid1", "name": "Ski school", "role": "Ski school", "look": { "kid": true, "skin": "#f2c8a8", "hair": "helmet", "hairColor": "#3a8ae0", "jacket": "#f07a20", "trousers": "#2a3a6a", "skis": "#f4f4f4" } },
+    { "id": "kid2", "name": "Ski school", "role": "Ski school", "look": { "kid": true, "skin": "#c89070", "hair": "helmet", "hairColor": "#e03a6a", "jacket": "#f07a20", "trousers": "#3a2a4a", "skis": "#f0d020" } },
+    { "id": "kid3", "name": "Ski school", "role": "Ski school", "look": { "kid": true, "skin": "#f5d2b8", "hair": "helmet", "hairColor": "#50c050", "jacket": "#f07a20", "trousers": "#2a2a2a", "skis": "#e03a3a" } },
+    { "id": "boarder", "name": "Snowboarder", "role": "Sitting in the middle of the piste", "look": { "skin": "#eac0a0", "hair": "beanie", "hairColor": "#3a3a3a", "jacket": "#3ac0a0", "trim": "#2a8a70", "trousers": "#8a6a3a", "skis": "#202020", "board": true, "build": "large" } },
+    { "id": "tourist1", "name": "Tourist", "role": "Skier", "look": { "skin": "#f0c8a8", "hair": "helmet", "hairColor": "#f4f4f4", "goggles": true, "jacket": "#3a5ad0", "trousers": "#1a1a2a", "skis": "#d03a3a" } },
+    { "id": "tourist2", "name": "Tourist", "role": "Skier", "look": { "skin": "#e0b090", "hair": "helmet", "hairColor": "#202020", "goggles": true, "jacket": "#d0d040", "trousers": "#303030", "skis": "#3a3ad0" } },
+    { "id": "tourist3", "name": "Tourist", "role": "Skier", "look": { "skin": "#f4d0b4", "hair": "bobble", "hairColor": "#40a0d0", "bobble": "#f0f040", "hairUnder": "#d0a040", "jacket": "#a03ad0", "trousers": "#f4f4f4", "skis": "#202020" } }
+  ]
+}

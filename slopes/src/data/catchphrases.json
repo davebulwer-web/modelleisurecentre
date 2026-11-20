@@ -1,0 +1,139 @@
+{
+ "_comment": "Andy's lines, rotated with no immediate repeats. Add as many as you like. 'catchphrases' play when Andy sorts something out; 'grumbles' when a scrape is missed; 'crash' when Andy wipes out; 'bumped' is what other skiers say when Andy flattens them; 'apres' is the evening in the bar, one picked per day; 'leedsBanter'/'leedsReplies' are Banter Bob and Andy; 'chairman' is the Club Chairman ringing Andy on holiday; 'lee', 'alistair' and the rest are what those people say.",
+ "catchphrases": [
+  "You don't get the gig!",
+  "Worse than my ex-wife.",
+  "A problem, but not my problem.",
+  "For goodness sake...",
+  "Have you tried turning it off and leaving?",
+  "Not on my watch.",
+  "Thirty five years I've been doing this.",
+  "Popular as a pork chop in a synagogue.",
+  "Not my circus, not my clowns.",
+  "Bhups has two cars",
+  "Ekow's thighs",
+  "Wegovy Boy",
+  "Scummy Contractor",
+  "Carlos Hepplos",
+  "How is the wonderful, the delectable Strewth?",
+  "You have two hopes and Bob is banging out tunes",
+  "Princess still can't drive",
+  "The current Mrs Smith",
+  "Rammed to the gunwales",
+  "As useful as an ashtray on a motorbike",
+  "Did I tell you about the bloke from MI5?",
+  "I saw half a bloke in a lift shaft",
+  "Biltong Boy",
+  "Katie Chalk, do do do do do do",
+  "Bouncer at Mothercare",
+  "Car for Sale, call Bhups!",
+  "Après-ski? Après ME, more like.",
+  "Ski? I've been skiing since before you were born.",
+  "Pizza. Chips. PIZZA.",
+  "Who brought the lads? Never again.",
+  "It's not a holiday, it's a hostage situation.",
+  "Eighty quid for a lift pass. EIGHTY QUID.",
+  "Seven euros for a hot chocolate!",
+  "Marching On Together!",
+  "Leeds! Leeds! Leeds!"
+ ],
+ "grumbles": [
+  "Grrr...",
+  "Oh, marvellous.",
+  "Typical.",
+  "Brilliant. Just brilliant.",
+  "Why me?",
+  "Doesn't get the gig",
+  "Every. Single. Year.",
+  "I could have gone to Skegness."
+ ],
+ "crash": [
+  "For goodness sake...",
+  "My KNEES!",
+  "Who put that tree there?!",
+  "I'm fine. I MEANT to do that.",
+  "Thirty five years I've been doing this.",
+  "Snow down my pants. Marvellous.",
+  "Not on my watch. Apparently it IS on my watch."
+ ],
+ "bumped": [
+  "Oi!",
+  "Sacré bleu!",
+  "Watch where you're going, baldy!",
+  "Mein Gott!",
+  "Mamma mia!",
+  "My knee!"
+ ],
+ "air": [
+  "Eddie the Eagle, eat your heart out!",
+  "Look at me, Mum!",
+  "Andy has left the ground!",
+  "Brace! BRACE!",
+  "I'm too old for this!"
+ ],
+ "leedsBanter": [
+  "Leeds are going down!",
+  "Dirty Leeds!",
+  "When did Leeds last win anything? 1992?",
+  "Marching on together... to the Championship!",
+  "Leeds? Never heard of 'em.",
+  "Leeds are a pub team!"
+ ],
+ "leedsReplies": [
+  "Marching On Together! Now OUT.",
+  "Wash your mouth out!",
+  "Leeds are the greatest club in the world. END OF.",
+  "You're not fit to wipe Billy Bremner's boots!",
+  "We're Leeds and we're proud of it!"
+ ],
+ "chairman": [
+  "Andy! Quick one. Where's the key to the kit cupboard?",
+  "Andy, it's the Chairman. Are you on holiday? Since when?",
+  "We need the Under-8s' subs spreadsheet. Today.",
+  "Mrs Pemberton's complained. About your out-of-office.",
+  "Can you do training on Saturday? From the Alps?"
+ ],
+ "fobOffs": [
+  "Sorry, you're breaking up... ksshhhh...",
+  "I'm halfway up a mountain, Chairman.",
+  "Ask Gaz. Yes, I know. Ask him anyway.",
+  "It's in the drawer. No, the OTHER drawer."
+ ],
+ "lee": [
+  "On your left! On your right! On your EVERYTHING!",
+  "Strava says I'm doing 94 k!",
+  "Marginal gains, Andy!",
+  "Out of the way, I'm on a segment!"
+ ],
+ "alistair": [
+  "Don't mind me...",
+  "These chips were going spare!",
+  "I'm not banned in THIS country!",
+  "*tiptoes in ski boots*"
+ ],
+ "alistairCaught": [
+  "You're BANNED, Alistair!",
+  "Put the chips back!",
+  "Not on my watch, Alistair.",
+  "Which bit of 'banned' was unclear?"
+ ],
+ "apres": [
+  "Plug has ordered a tower of something blue. Andy wants a cup of tea.",
+  "Kinky Steve is dancing on the table in his onesie. The barman has called someone.",
+  "Jimmy Ginge has gone the colour of a postbox. 'It's a tan,' he says.",
+  "The Aging Rocker has commandeered the karaoke. Power ballads until 2am.",
+  "Sid fell asleep in his fondue.",
+  "KFT says tomorrow he knows a quicker way down. Andy's eye is twitching.",
+  "Somebody has put Andy's ski boots in the hot tub.",
+  "Plug has fallen off his bar stool. In a bar with no ski slope in it.",
+  "The chalet host asks who left the shower running. All eyes on Sid."
+ ],
+ "dayIntro": {
+  "green": "A gentle start. Even Plug can do this one. Probably.",
+  "blue": "Wide, friendly, and full of people who can't stop.",
+  "red": "Steeper. Icier. Sid's already asleep on the lift.",
+  "black": "Moguls, ice and a sign that just says 'NON'.",
+  "offpiste": "KFT says it's a shortcut. It is not a shortcut.",
+  "race": "Last run of the week. First one to the bar buys the rounds."
+ }
+}

@@ -4,7 +4,7 @@ The follow-up to *Angry Andy Gets The Gig*. Andy has a new gig: **Duty Manager a
 
 A small top-down pixel-art browser game, built on the same engine, art style and controls as the first game.
 
-**Also in this repo:** [Angry Andy - Football Coach](football-coach/README.md), the third game, in the `football-coach/` folder. It is its own project (run `npm install` inside that folder).
+**Also in this repo:** [Angry Andy - Football Coach](football-coach/README.md), the third game, in the `football-coach/` folder. It is its own project (run `npm install` inside that folder). And the fourth: [Angry Andy on the Slopes](slopes/README.md), a skiing game in the `slopes/` folder, set up the same way.
 
 ## The leisure centre
 

@@ -1,0 +1,44 @@
+{
+  "_comment": "Numbers you can tweak. Speeds are pixels per second. 'days' is the ski week: one run per day, getting longer and busier. 'grade' picks the piste markers and the day's intro line. 'width' is the groomed piste width in pixels (the screen is 640 wide). 'density' scales how many trees, rocks and so on appear on the piste. 'scrapeEvery' is the distance in pixels between the mates' scrapes; 'maxScrapes' is how many can be on at once. 'par' is the time in seconds you need to beat for a time bonus.",
+  "physics": {
+    "gravity": 270,
+    "friction": 30,
+    "drag": 0.0038,
+    "tuckDrag": 0.55,
+    "tuckBoost": 1.1,
+    "brake": 340,
+    "sideways": 260,
+    "turnRate": 3.4,
+    "powderDrag": 2.4,
+    "powderFriction": 90,
+    "jump": 150,
+    "rampBoost": 0.45,
+    "gravityZ": 520,
+    "crashTime": 1.4,
+    "invulnerable": 1.3,
+    "andyScreenY": 112
+  },
+  "anger": {
+    "crash": 7,
+    "crashPerson": 9,
+    "snowball": 3,
+    "missed": 11,
+    "missedLeeds": 18,
+    "calmScrape": 9,
+    "calmLeeds": 16,
+    "calmCocoa": 8,
+    "calmGate": 1.2,
+    "coldRate": 1.1,
+    "coldAnger": 2.2,
+    "carryOver": 0.5
+  },
+  "points": { "per100px": 10, "gate": 25, "scrape": 150, "air": 120, "cocoa": 20, "timeBonus": 25 },
+  "days": [
+    { "day": "Monday",    "run": "The Nursery Slope",   "grade": "green",    "length": 10000, "width": [420, 480], "density": 0.55, "moguls": 0,   "ice": 0,    "ramps": 0.6, "scrapeEvery": 1500, "maxScrapes": 2, "par": 62, "bar": "The Grumpy Marmot" },
+    { "day": "Tuesday",   "run": "Le Grand Faff",       "grade": "blue",     "length": 12000, "width": [360, 440], "density": 0.75, "moguls": 0.2, "ice": 0.2,  "ramps": 0.8, "scrapeEvery": 1300, "maxScrapes": 2, "par": 70, "bar": "Le Vin Chaud Inn" },
+    { "day": "Wednesday", "run": "Col du Grumble",      "grade": "red",      "length": 14000, "width": [300, 400], "density": 0.95, "moguls": 0.4, "ice": 0.5,  "ramps": 1,   "scrapeEvery": 1150, "maxScrapes": 3, "par": 78, "bar": "Bar Fondue-Mental" },
+    { "day": "Thursday",  "run": "The Widowmaker",      "grade": "black",    "length": 15000, "width": [260, 360], "density": 1.1,  "moguls": 1,   "ice": 0.8,  "ramps": 1,   "scrapeEvery": 1050, "maxScrapes": 3, "par": 84, "bar": "The Frozen Ferret" },
+    { "day": "Friday",    "run": "KFT's Shortcut",      "grade": "offpiste", "length": 15000, "width": [220, 320], "density": 1.4,  "moguls": 0.5, "ice": 0.4,  "ramps": 1.3, "scrapeEvery": 1000, "maxScrapes": 3, "par": 90, "bar": "Wherever This Is" },
+    { "day": "Saturday",  "run": "Last Run to the Bar", "grade": "race",     "length": 18000, "width": [300, 420], "density": 1.2,  "moguls": 0.6, "ice": 0.6,  "ramps": 1.5, "scrapeEvery": 900,  "maxScrapes": 3, "par": 100, "bar": "The Grumpy Marmot" }
+  ]
+}
