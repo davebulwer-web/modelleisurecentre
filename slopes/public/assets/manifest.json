@@ -1,0 +1,328 @@
+{
+ "frame": {
+  "w": 24,
+  "h": 32,
+  "names": [
+   "down",
+   "slight",
+   "diag",
+   "side",
+   "crash",
+   "jump",
+   "tuck",
+   "stand",
+   "shout",
+   "sit"
+  ]
+ },
+ "characters": {
+  "andy": {
+   "file": "sprites/andy.png",
+   "angry": "sprites/andy_angry.png",
+   "furious": "sprites/andy_furious.png"
+  },
+  "steve": {
+   "file": "sprites/steve.png"
+  },
+  "jimmy": {
+   "file": "sprites/jimmy.png"
+  },
+  "plug": {
+   "file": "sprites/plug.png"
+  },
+  "kft": {
+   "file": "sprites/kft.png"
+  },
+  "sid": {
+   "file": "sprites/sid.png"
+  },
+  "rocker": {
+   "file": "sprites/rocker.png"
+  },
+  "lee": {
+   "file": "sprites/lee.png"
+  },
+  "alistair": {
+   "file": "sprites/alistair.png"
+  },
+  "bob": {
+   "file": "sprites/bob.png"
+  },
+  "mireille": {
+   "file": "sprites/mireille.png"
+  },
+  "kid1": {
+   "file": "sprites/kid1.png"
+  },
+  "kid2": {
+   "file": "sprites/kid2.png"
+  },
+  "kid3": {
+   "file": "sprites/kid3.png"
+  },
+  "boarder": {
+   "file": "sprites/boarder.png"
+  },
+  "tourist1": {
+   "file": "sprites/tourist1.png"
+  },
+  "tourist2": {
+   "file": "sprites/tourist2.png"
+  },
+  "tourist3": {
+   "file": "sprites/tourist3.png"
+  }
+ },
+ "portraits": {
+  "steve": "portraits/steve.png",
+  "jimmy": "portraits/jimmy.png",
+  "plug": "portraits/plug.png",
+  "kft": "portraits/kft.png",
+  "sid": "portraits/sid.png",
+  "rocker": "portraits/rocker.png",
+  "lee": "portraits/lee.png",
+  "alistair": "portraits/alistair.png",
+  "bob": "portraits/bob.png",
+  "mireille": "portraits/mireille.png",
+  "andy_neutral": "portraits/andy_neutral.png",
+  "andy_annoyed": "portraits/andy_annoyed.png",
+  "andy_irritated": "portraits/andy_irritated.png",
+  "andy_angry": "portraits/andy_angry.png",
+  "andy_furious": "portraits/andy_furious.png",
+  "andy_shouting": "portraits/andy_shouting.png",
+  "chairman": "portraits/chairman.png"
+ },
+ "objects": {
+  "file": "sprites/objects.png",
+  "frames": {
+   "tree": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 40
+   },
+   "tree_small": {
+    "x": 25,
+    "y": 0,
+    "w": 16,
+    "h": 26
+   },
+   "tree_big": {
+    "x": 42,
+    "y": 0,
+    "w": 30,
+    "h": 52
+   },
+   "rock": {
+    "x": 73,
+    "y": 0,
+    "w": 18,
+    "h": 12
+   },
+   "stump": {
+    "x": 92,
+    "y": 0,
+    "w": 12,
+    "h": 12
+   },
+   "mogul": {
+    "x": 105,
+    "y": 0,
+    "w": 26,
+    "h": 10
+   },
+   "ramp": {
+    "x": 132,
+    "y": 0,
+    "w": 28,
+    "h": 18
+   },
+   "flag_red": {
+    "x": 161,
+    "y": 0,
+    "w": 8,
+    "h": 18
+   },
+   "flag_blue": {
+    "x": 170,
+    "y": 0,
+    "w": 8,
+    "h": 18
+   },
+   "pylon": {
+    "x": 179,
+    "y": 0,
+    "w": 16,
+    "h": 60
+   },
+   "cannon": {
+    "x": 196,
+    "y": 0,
+    "w": 20,
+    "h": 22
+   },
+   "hut": {
+    "x": 217,
+    "y": 0,
+    "w": 76,
+    "h": 60
+   },
+   "cocoa": {
+    "x": 294,
+    "y": 0,
+    "w": 36,
+    "h": 34
+   },
+   "sign_green": {
+    "x": 331,
+    "y": 0,
+    "w": 14,
+    "h": 22
+   },
+   "sign_blue": {
+    "x": 346,
+    "y": 0,
+    "w": 14,
+    "h": 22
+   },
+   "sign_red": {
+    "x": 361,
+    "y": 0,
+    "w": 14,
+    "h": 22
+   },
+   "sign_black": {
+    "x": 376,
+    "y": 0,
+    "w": 14,
+    "h": 22
+   },
+   "ice": {
+    "x": 391,
+    "y": 0,
+    "w": 40,
+    "h": 18
+   },
+   "snowball": {
+    "x": 432,
+    "y": 0,
+    "w": 6,
+    "h": 6
+   },
+   "chair": {
+    "x": 439,
+    "y": 0,
+    "w": 22,
+    "h": 26
+   },
+   "ski": {
+    "x": 462,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "pass": {
+    "x": 479,
+    "y": 0,
+    "w": 12,
+    "h": 10
+   },
+   "suncream": {
+    "x": 492,
+    "y": 0,
+    "w": 8,
+    "h": 14
+   },
+   "deepheat": {
+    "x": 501,
+    "y": 0,
+    "w": 14,
+    "h": 8
+   },
+   "map": {
+    "x": 516,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "speaker": {
+    "x": 531,
+    "y": 0,
+    "w": 12,
+    "h": 14
+   },
+   "goggles_item": {
+    "x": 544,
+    "y": 0,
+    "w": 14,
+    "h": 8
+   },
+   "basher": {
+    "x": 559,
+    "y": 0,
+    "w": 56,
+    "h": 36
+   },
+   "fence": {
+    "x": 616,
+    "y": 0,
+    "w": 34,
+    "h": 14
+   },
+   "yard": {
+    "x": 651,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "snowman": {
+    "x": 680,
+    "y": 0,
+    "w": 16,
+    "h": 24
+   },
+   "powder": {
+    "x": 697,
+    "y": 0,
+    "w": 10,
+    "h": 6
+   },
+   "marker": {
+    "x": 708,
+    "y": 0,
+    "w": 4,
+    "h": 18
+   },
+   "bar": {
+    "x": 713,
+    "y": 0,
+    "w": 96,
+    "h": 64
+   },
+   "tape": {
+    "x": 810,
+    "y": 0,
+    "w": 12,
+    "h": 12
+   },
+   "zzz": {
+    "x": 823,
+    "y": 0,
+    "w": 10,
+    "h": 10
+   },
+   "phone": {
+    "x": 834,
+    "y": 0,
+    "w": 8,
+    "h": 14
+   },
+   "marmot": {
+    "x": 843,
+    "y": 0,
+    "w": 12,
+    "h": 12
+   }
+  }
+ }
+}
